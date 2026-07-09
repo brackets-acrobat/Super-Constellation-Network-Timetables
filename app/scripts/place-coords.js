@@ -99,6 +99,11 @@ const COORDS = {
   'wake island': [19.28, 166.65],
 };
 
+// Fusionne les coordonnées additionnelles du jeu « sourced » étendu (12 compagnies).
+try {
+  Object.assign(COORDS, require('./place-coords-2'));
+} catch (e) { /* pas d'extension */ }
+
 function geocode(raw) {
   const key = normalizePlace(raw);
   const c = COORDS[key];

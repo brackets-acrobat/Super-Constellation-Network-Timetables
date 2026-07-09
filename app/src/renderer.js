@@ -8,8 +8,8 @@ let currentFlight = null;
 const I18N = {
   en: {
     title: 'Super Constellation — L-1049 Timetables',
-    brandSub: 'Network Timetables — Lockheed L-1049',
-    brandEra: 'Intercontinental network · 1950s',
+    brandTitle: 'Super Constellation Network Timetables',
+    brandEra: 'For the Red Wing Lockheed Super Constellation',
     lblAirline: '1 · Airline',
     lblSheet: '2 · Network / Sheet',
     lblFlight: '3 · Flight / Line',
@@ -29,8 +29,8 @@ const I18N = {
   },
   fr: {
     title: 'Super Constellation — Horaires L-1049',
-    brandSub: 'Horaires du réseau — Lockheed L-1049',
-    brandEra: 'Réseau intercontinental · années 1950',
+    brandTitle: 'Super Constellation Network Timetables',
+    brandEra: 'Pour le Red Wing Lockheed Super Constellation',
     lblAirline: '1 · Compagnie',
     lblSheet: '2 · Réseau / Feuillet',
     lblFlight: '3 · Vol / Ligne',
@@ -153,7 +153,7 @@ function updateFooter() {
 function applyStaticI18n() {
   const t = T();
   document.title = t.title;
-  setText('brand-sub', t.brandSub);
+  setText('brand-title', t.brandTitle);
   setText('brand-era', t.brandEra);
   setText('lbl-airline', t.lblAirline);
   setText('lbl-sheet', t.lblSheet);

@@ -26,6 +26,31 @@ const AIRLINES = [
   { id: 'flying-tiger', name: 'Flying Tiger', file: 'Reseau_Flying_Tiger_L1049H_sourced.xlsx' },
   { id: 'irish-airlines', name: 'Irish Airlines', file: 'Reseau_Irish_Airlines_L1049_sourced.xlsx' },
   { id: 'pan-am', name: 'Pan Am', file: 'Reseau_Pan_Am_L1049_sourced.xlsx' },
+  // Extension : 12 compagnies supplémentaires (générées par gen-new-airlines.js).
+  { id: 'klm', name: 'KLM', file: 'Reseau_KLM_L1049_sourced.xlsx' },
+  { id: 'sabena', name: 'Sabena', file: 'Reseau_Sabena_L1049_sourced.xlsx' },
+  { id: 'qantas', name: 'Qantas', file: 'Reseau_Qantas_L1049_sourced.xlsx' },
+  { id: 'trans-canada', name: 'Trans-Canada Air Lines', file: 'Reseau_Trans_Canada_L1049_sourced.xlsx' },
+  { id: 'buffalo', name: 'Buffalo Airways', file: 'Reseau_Buffalo_L1049_sourced.xlsx' },
+  { id: 'nordair', name: 'Nordair', file: 'Reseau_Nordair_L1049_sourced.xlsx' },
+  { id: 'aeropostal', name: 'Línea Aeropostal Venezolana', file: 'Reseau_Aeropostal_Venezolana_L1049_sourced.xlsx' },
+  { id: 'air-india', name: 'Air India', file: 'Reseau_Air_India_L1049_sourced.xlsx' },
+  { id: 'pia', name: 'Pakistan International', file: 'Reseau_PIA_L1049_sourced.xlsx' },
+  { id: 'varig', name: 'Varig', file: 'Reseau_Varig_L1049_sourced.xlsx' },
+  { id: 'jat', name: 'JAT Yugoslav Airlines', file: 'Reseau_JAT_L1049_sourced.xlsx' },
+  { id: 'saa', name: 'South African Airways', file: 'Reseau_South_African_L1049_sourced.xlsx' },
+  // 2e lot : 11 compagnies supplémentaires (générées par gen-new-airlines.js).
+  { id: 'american-overseas', name: 'American Overseas Airlines', file: 'Reseau_American_Overseas_L1049_sourced.xlsx' },
+  { id: 'swissair', name: 'Swissair', file: 'Reseau_Swissair_L1049_sourced.xlsx' },
+  { id: 'iberia', name: 'Iberia', file: 'Reseau_Iberia_L1049_sourced.xlsx' },
+  { id: 'alaska', name: 'Alaska Airlines', file: 'Reseau_Alaska_L1049_sourced.xlsx' },
+  { id: 'capitol', name: 'Capitol Airways', file: 'Reseau_Capitol_L1049_sourced.xlsx' },
+  { id: 'seaboard', name: 'Seaboard & Western', file: 'Reseau_Seaboard_Western_L1049_sourced.xlsx' },
+  { id: 'avianca', name: 'Avianca', file: 'Reseau_Avianca_L1049_sourced.xlsx' },
+  { id: 'boac', name: 'BOAC', file: 'Reseau_BOAC_L1049_sourced.xlsx' },
+  { id: 'united', name: 'United Air Lines', file: 'Reseau_United_L1049_sourced.xlsx' },
+  { id: 'luxair', name: 'Luxair', file: 'Reseau_Luxair_L1049_sourced.xlsx' },
+  { id: 'delta', name: 'Delta Air Lines', file: 'Reseau_Delta_L1049_sourced.xlsx' },
 ];
 
 function slug(s) {
