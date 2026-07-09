@@ -5,9 +5,14 @@
   "main": "src/main.js",
   "author": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brackets-acrobat/Super-Constellation-Network-Timetables.git"
+  },
   "scripts": {
     "compile-data": "node scripts/compile-data.js",
     "build-map": "node scripts/build-map.js",
+    "make-icon": "electron scripts/make-icon.js",
     "build-all": "node scripts/compile-data.js && node scripts/build-map.js",
     "start": "electron .",
     "dist": "electron-builder"
@@ -16,19 +21,31 @@
     "appId": "com.superconstellation.timetables",
     "productName": "Super Constellation Timetables",
     "files": [
-      "src/**/*"
+      "src/**/*",
+      "build/icon.ico"
     ],
     "win": {
-      "target": "nsis"
+      "target": "nsis",
+      "icon": "build/icon.ico"
     },
     "nsis": {
       "oneClick": false,
-      "allowToChangeInstallationDirectory": true
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "installerHeaderIcon": "build/icon.ico",
+      "shortcutName": "Super Constellation Timetables"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "brackets-acrobat",
+      "repo": "Super-Constellation-Network-Timetables"
     }
   },
   "devDependencies": {
     "electron": "^31.7.7",
     "electron-builder": "^24.13.3",
+    "png-to-ico": "^3.0.2",
     "topojson-client": "^3.1.0",
     "world-atlas": "^2.0.2",
     "xlsx": "^0.18.5"
