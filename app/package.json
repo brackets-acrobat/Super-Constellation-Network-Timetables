@@ -1,0 +1,36 @@
+{
+  "name": "super-constellation-timetables",
+  "version": "1.0.0",
+  "description": "Horaires du Lockheed L-1049 Super Constellation (TWA, Air France, Lufthansa)",
+  "main": "src/main.js",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "compile-data": "node scripts/compile-data.js",
+    "build-map": "node scripts/build-map.js",
+    "build-all": "node scripts/compile-data.js && node scripts/build-map.js",
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.superconstellation.timetables",
+    "productName": "Super Constellation Timetables",
+    "files": [
+      "src/**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^31.7.7",
+    "electron-builder": "^24.13.3",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2",
+    "xlsx": "^0.18.5"
+  }
+}

@@ -1,0 +1,10 @@
+# Dépendances et artefacts de build
+node_modules/
+dist/
+
+# Configuration locale de l'outillage
+.claude/
+
+# Fichiers système
+Thumbs.db
+.DS_Store
