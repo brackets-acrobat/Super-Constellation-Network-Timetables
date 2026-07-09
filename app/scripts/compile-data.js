@@ -19,13 +19,13 @@ const SRC_DIR = path.resolve(__dirname, '../../liaisons_Super_Constellation');
 const OUT = path.resolve(__dirname, '../src/data/timetables.json');
 
 const AIRLINES = [
-  { id: 'twa', name: 'TWA', file: 'Reseau_TWA_L1049.xlsx' },
-  { id: 'air-france', name: 'Air France', file: 'Reseau_Air_France_L1049.xlsx' },
-  { id: 'lufthansa', name: 'Lufthansa', file: 'Reseau_Lufthansa_L1049G.xlsx' },
-  { id: 'eastern-air-lines', name: 'Eastern Air Lines', file: 'Reseau_Eastern_Air_Lines_L1049.xlsx' },
-  { id: 'flying-tiger', name: 'Flying Tiger', file: 'Reseau_Flying_Tiger_L1049H.xlsx' },
-  { id: 'irish-airlines', name: 'Irish Airlines', file: 'Reseau_Irish_Airlines_L1049.xlsx' },
-  { id: 'pan-am', name: 'Pan Am', file: 'Reseau_Pan_Am_L1049.xlsx' },
+  { id: 'twa', name: 'TWA', file: 'Reseau_TWA_L1049_sourced.xlsx' },
+  { id: 'air-france', name: 'Air France', file: 'Reseau_Air_France_L1049_sourced.xlsx' },
+  { id: 'lufthansa', name: 'Lufthansa', file: 'Reseau_Lufthansa_L1049G_sourced.xlsx' },
+  { id: 'eastern-air-lines', name: 'Eastern Air Lines', file: 'Reseau_Eastern_Air_Lines_L1049_sourced.xlsx' },
+  { id: 'flying-tiger', name: 'Flying Tiger', file: 'Reseau_Flying_Tiger_L1049H_sourced.xlsx' },
+  { id: 'irish-airlines', name: 'Irish Airlines', file: 'Reseau_Irish_Airlines_L1049_sourced.xlsx' },
+  { id: 'pan-am', name: 'Pan Am', file: 'Reseau_Pan_Am_L1049_sourced.xlsx' },
 ];
 
 function slug(s) {

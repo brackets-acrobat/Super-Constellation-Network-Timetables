@@ -230,6 +230,18 @@ function lookup(dict, s, misses, label) {
   return v;
 }
 
+// Fusionne les traductions additionnelles du jeu « sourced » si présentes.
+try {
+  const extra = require('./translations-extra');
+  Object.assign(SHEETS, extra.SHEETS || {});
+  Object.assign(LINE_HEADERS, extra.LINE_HEADERS || {});
+  Object.assign(FREQ_HEADERS, extra.FREQ_HEADERS || {});
+  Object.assign(META_HEADERS, extra.META_HEADERS || {});
+  Object.assign(LINES, extra.LINES || {});
+  Object.assign(FREQ, extra.FREQ || {});
+  Object.assign(NOTES, extra.NOTES || {});
+} catch (e) { /* pas d'extension */ }
+
 module.exports = {
   SHEETS, LINE_HEADERS, FREQ_HEADERS, META_HEADERS, LINES, FREQ, NOTES, CITY, DAY,
   translatePlace, translateTime, lookup,

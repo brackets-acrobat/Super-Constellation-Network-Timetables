@@ -69,6 +69,8 @@ const COORDS = {
   'washington': [38.90, -77.04],
   // Ajouts : Eastern Air Lines, Flying Tiger, Irish Airlines, Pan Am.
   'atlanta': [33.75, -84.39],
+  'bangkok': [13.75, 100.50],
+  'guam': [13.47, 144.75],
   'berlin': [52.52, 13.40],
   'binghamton': [42.10, -75.91],
   'boston': [42.36, -71.06],

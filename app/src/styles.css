@@ -271,7 +271,7 @@ select:disabled { opacity: .45; cursor: not-allowed; background-color: #ede5cf; 
   background: repeating-linear-gradient(var(--gold) 0 6px, transparent 6px 12px);
 }
 
-.tl-item { position: relative; padding: 0 0 20px 34px; }
+.tl-item { position: relative; padding: 0 0 15px 34px; }
 .tl-item:last-child { padding-bottom: 0; }
 
 .tl-dot {
