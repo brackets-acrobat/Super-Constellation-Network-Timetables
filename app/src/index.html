@@ -30,12 +30,16 @@
       <select id="sel-airline"></select>
     </div>
     <div class="field">
-      <label for="sel-sheet" id="lbl-sheet">2 · Network / Sheet</label>
+      <label for="sel-sheet" id="lbl-sheet">2 · Network</label>
       <select id="sel-sheet" disabled></select>
     </div>
     <div class="field field-grow">
-      <label for="sel-flight" id="lbl-flight">3 · Flight / Line</label>
+      <label for="sel-flight" id="lbl-flight">3 · Line</label>
       <select id="sel-flight" disabled></select>
+    </div>
+    <div class="filter-box" role="group" aria-label="Filter">
+      <label class="chk"><input type="checkbox" id="flt-historical" checked /><span id="lbl-historical">Historical lines</span></label>
+      <label class="chk"><input type="checkbox" id="flt-fictional" checked /><span id="lbl-fictional">Fictional lines</span></label>
     </div>
   </section>
 

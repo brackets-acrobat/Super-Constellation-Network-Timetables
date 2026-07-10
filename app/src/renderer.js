@@ -11,8 +11,10 @@ const I18N = {
     brandTitle: 'Super Constellation Network Timetables',
     brandEra: 'For the Red Wing Lockheed Super Constellation',
     lblAirline: '1 · Airline',
-    lblSheet: '2 · Network / Sheet',
-    lblFlight: '3 · Flight / Line',
+    lblSheet: '2 · Network',
+    lblFlight: '3 · Line',
+    filterHistorical: 'Historical lines',
+    filterFictional: 'Fictional lines',
     phAirline: '— Select an airline —',
     phSheet: '— Select a network —',
     phFlight: '— Select a flight —',
@@ -32,8 +34,10 @@ const I18N = {
     brandTitle: 'Super Constellation Network Timetables',
     brandEra: 'Pour le Red Wing Lockheed Super Constellation',
     lblAirline: '1 · Compagnie',
-    lblSheet: '2 · Réseau / Feuillet',
-    lblFlight: '3 · Vol / Ligne',
+    lblSheet: '2 · Réseau',
+    lblFlight: '3 · Ligne',
+    filterHistorical: 'Lignes historiques',
+    filterFictional: 'Lignes fictives',
     phAirline: '— Choisir une compagnie —',
     phSheet: '— Choisir un réseau —',
     phFlight: '— Choisir un vol —',
@@ -59,7 +63,16 @@ const els = {
   flight: document.getElementById('sel-flight'),
   detail: document.getElementById('detail'),
   footerMeta: document.getElementById('footer-meta'),
+  fltHistorical: document.getElementById('flt-historical'),
+  fltFictional: document.getElementById('flt-fictional'),
 };
+
+// Compagnies visibles selon les cases « Lignes historiques / fictives ».
+function visibleAirlines() {
+  const h = els.fltHistorical.checked, f = els.fltFictional.checked;
+  return AIRLINES.filter((a) =>
+    (a.kind === 'historical' && h) || (a.kind === 'fictional' && f));
+}
 
 // ---------- Utilitaires ----------
 function opt(value, label) {
@@ -102,7 +115,21 @@ function flightOptionLabel(f) {
 function fillAirlines() {
   els.airline.innerHTML = '';
   els.airline.appendChild(placeholderOption(T().phAirline));
-  AIRLINES.forEach((a) => els.airline.appendChild(opt(a.id, a.name)));
+  visibleAirlines().forEach((a) => els.airline.appendChild(opt(a.id, a.name)));
+}
+
+// Applique le filtre : reconstruit le menu 1 et, si la compagnie sélectionnée
+// n'est plus visible, réinitialise la cascade.
+function applyAirlineFilter() {
+  const prev = els.airline.value;
+  fillAirlines();
+  if (prev && visibleAirlines().some((a) => a.id === prev)) {
+    els.airline.value = prev;
+  } else {
+    resetSelect(els.sheet, T().phSheet);
+    resetSelect(els.flight, T().phFlight);
+    showPlaceholder();
+  }
 }
 
 function fillSheets(airline) {
@@ -158,6 +185,8 @@ function applyStaticI18n() {
   setText('lbl-airline', t.lblAirline);
   setText('lbl-sheet', t.lblSheet);
   setText('lbl-flight', t.lblFlight);
+  setText('lbl-historical', t.filterHistorical);
+  setText('lbl-fictional', t.filterFictional);
   setText('placeholder-msg', t.placeholder);
   updateFooter();
   document.querySelectorAll('.lang-btn').forEach((b) =>
@@ -433,6 +462,10 @@ document.getElementById('lang-toggle').addEventListener('click', (e) => {
   const btn = e.target.closest('.lang-btn');
   if (btn && btn.dataset.lang !== LANG) setLang(btn.dataset.lang);
 });
+
+// ---------- Filtre historiques / fictives ----------
+els.fltHistorical.addEventListener('change', applyAirlineFilter);
+els.fltFictional.addEventListener('change', applyAirlineFilter);
 
 // ---------- Go (anglais par défaut) ----------
 applyStaticI18n();

@@ -37,7 +37,6 @@ const AIRLINES = [
   { id: 'air-india', name: 'Air India', file: 'Reseau_Air_India_L1049_sourced.xlsx' },
   { id: 'pia', name: 'Pakistan International', file: 'Reseau_PIA_L1049_sourced.xlsx' },
   { id: 'varig', name: 'Varig', file: 'Reseau_Varig_L1049_sourced.xlsx' },
-  { id: 'jat', name: 'JAT Yugoslav Airlines', file: 'Reseau_JAT_L1049_sourced.xlsx' },
   { id: 'saa', name: 'South African Airways', file: 'Reseau_South_African_L1049_sourced.xlsx' },
   // 2e lot : 11 compagnies supplémentaires (générées par gen-new-airlines.js).
   { id: 'american-overseas', name: 'American Overseas Airlines', file: 'Reseau_American_Overseas_L1049_sourced.xlsx' },
@@ -51,7 +50,34 @@ const AIRLINES = [
   { id: 'united', name: 'United Air Lines', file: 'Reseau_United_L1049_sourced.xlsx' },
   { id: 'luxair', name: 'Luxair', file: 'Reseau_Luxair_L1049_sourced.xlsx' },
   { id: 'delta', name: 'Delta Air Lines', file: 'Reseau_Delta_L1049_sourced.xlsx' },
+  // 3e lot : opérateurs réels du L-1049 encore manquants.
+  { id: 'northwest', name: 'Northwest Orient Airlines', file: 'Reseau_Northwest_Orient_L1049_sourced.xlsx' },
+  { id: 'cubana', name: 'Cubana de Aviación', file: 'Reseau_Cubana_L1049_sourced.xlsx' },
+  { id: 'real', name: 'Real Transportes Aéreos', file: 'Reseau_Real_L1049_sourced.xlsx' },
+  // 4e lot : lignes FICTIVES (vraies routes DC-4 / DC-6, hors L-1049).
+  { id: 'aerolineas-argentinas', name: 'Aerolíneas Argentinas', file: 'Reseau_Aerolineas_Argentinas_L1049_sourced.xlsx' },
+  { id: 'olympic', name: 'Olympic Airways', file: 'Reseau_Olympic_L1049_sourced.xlsx' },
+  { id: 'aviateca', name: 'Aviateca', file: 'Reseau_Aviateca_L1049_sourced.xlsx' },
+  { id: 'cathay-pacific', name: 'Cathay Pacific', file: 'Reseau_Cathay_Pacific_L1049_sourced.xlsx' },
+  { id: 'icelandair', name: 'Icelandair (Loftleiðir)', file: 'Reseau_Icelandair_L1049_sourced.xlsx' },
+  { id: 'alitalia', name: 'Alitalia', file: 'Reseau_Alitalia_L1049_sourced.xlsx' },
+  { id: 'el-al', name: 'El Al', file: 'Reseau_El_Al_L1049_sourced.xlsx' },
+  { id: 'jal', name: 'Japan Airlines', file: 'Reseau_JAL_L1049_sourced.xlsx' },
+  { id: 'aeromexico', name: 'Aeroméxico', file: 'Reseau_Aeromexico_L1049_sourced.xlsx' },
+  { id: 'sata', name: 'SATA Air Açores', file: 'Reseau_SATA_L1049_sourced.xlsx' },
 ];
+
+// Compagnies « fictives » (feuillets [R] illustratifs : appareil/compagnie non
+// historiques pour le L-1049). Toutes les autres sont « historiques » (vrais
+// opérateurs [S]). Sert au filtre « Lignes historiques / fictives » de l'appli.
+const FICTIONAL = new Set([
+  // Lignes « fictives » : vraies routes DC-4 / DC-6, mais compagnies n'ayant pas
+  // exploité le L-1049 (appareil de même catégorie).
+  'pan-am', 'buffalo', 'nordair', 'saa', 'american-overseas', 'swissair',
+  'alaska', 'united', 'luxair', 'delta',
+  'aerolineas-argentinas', 'olympic', 'aviateca', 'cathay-pacific', 'icelandair',
+  'alitalia', 'el-al', 'jal', 'aeromexico', 'sata',
+]);
 
 function slug(s) {
   return String(s)
@@ -129,7 +155,8 @@ function main() {
       }));
       return { id: slug(sn), name: sn, notes, flights: enriched };
     });
-    return { id: a.id, name: a.name, sourceFile: a.file, sheets };
+    const kind = FICTIONAL.has(a.id) ? 'fictional' : 'historical';
+    return { id: a.id, name: a.name, kind, sourceFile: a.file, sheets };
   });
 
   const airlinesEn = translateAirlines(airlines);
