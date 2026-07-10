@@ -2,6 +2,7 @@
 
 const DATA = window.timetables.getData();
 const WORLD = window.timetables.getMap();
+const APP_VERSION = window.timetables.version || '';
 let currentFlight = null;
 
 // ---------- Internationalisation (interface) ----------
@@ -15,6 +16,11 @@ const I18N = {
     lblFlight: '3 · Line',
     filterHistorical: 'Historical lines',
     filterFictional: 'Fictional lines',
+    aboutTip: 'About',
+    aboutTitle: 'ABOUT',
+    aboutDesc: "An interactive, bilingual atlas of the Super Constellation's networks — part rigorous historical tool, part nostalgic tribute to 1950s aviation — that transparently owns the line between the documented and the reconstructed.",
+    aboutLicense: 'This software is distributed under the GPL-3.0 license or later.',
+    aboutSourcePre: 'The source code of this application is available on ',
     phAirline: '— Select an airline —',
     phSheet: '— Select a network —',
     phFlight: '— Select a flight —',
@@ -26,7 +32,7 @@ const I18N = {
     arr: 'Arr.', dep: 'Dep.', nextday: '+1 d',
     stopsLabel: (n) => `${n} ${n === 1 ? 'stop' : 'stops'}`,
     notesTitle: (name) => `Network notes “${name}”`,
-    footer: (aircraft, date) => `${aircraft} · data compiled on ${date}`,
+    footer: (aircraft, date, version) => `${aircraft} · data compiled on ${date} · v${version}`,
     dateLocale: 'en-GB',
   },
   fr: {
@@ -38,6 +44,11 @@ const I18N = {
     lblFlight: '3 · Ligne',
     filterHistorical: 'Lignes historiques',
     filterFictional: 'Lignes fictives',
+    aboutTip: 'À propos',
+    aboutTitle: 'À PROPOS',
+    aboutDesc: "Atlas interactif et bilingue des réseaux du Super Constellation — mi-outil historique rigoureux, mi-hommage nostalgique à l'aviation des années 50 — qui assume avec transparence la frontière entre le documenté et le reconstitué.",
+    aboutLicense: 'Ce logiciel est distribué sous licence GPL-3.0 ou ultérieure.',
+    aboutSourcePre: 'Le code source de cette application est disponible sur ',
     phAirline: '— Choisir une compagnie —',
     phSheet: '— Choisir un réseau —',
     phFlight: '— Choisir un vol —',
@@ -49,7 +60,7 @@ const I18N = {
     arr: 'Arr.', dep: 'Dép.', nextday: '+1 j',
     stopsLabel: (n) => `${n} escale${n > 1 ? 's' : ''}`,
     notesTitle: (name) => `Notes du réseau « ${name} »`,
-    footer: (aircraft, date) => `${aircraft} · données compilées le ${date}`,
+    footer: (aircraft, date, version) => `${aircraft} · données compilées le ${date} · v${version}`,
     dateLocale: 'fr-FR',
   },
 };
@@ -174,7 +185,7 @@ function setText(id, txt) { const e = document.getElementById(id); if (e) e.text
 function updateFooter() {
   const t = T();
   els.footerMeta.textContent =
-    t.footer(DATA.aircraft, new Date(DATA.generatedAt).toLocaleDateString(t.dateLocale));
+    t.footer(DATA.aircraft, new Date(DATA.generatedAt).toLocaleDateString(t.dateLocale), APP_VERSION);
 }
 
 function applyStaticI18n() {
@@ -187,6 +198,12 @@ function applyStaticI18n() {
   setText('lbl-flight', t.lblFlight);
   setText('lbl-historical', t.filterHistorical);
   setText('lbl-fictional', t.filterFictional);
+  const aboutBtn = document.getElementById('about-btn');
+  if (aboutBtn) { aboutBtn.title = t.aboutTip; aboutBtn.setAttribute('aria-label', t.aboutTip); }
+  setText('about-title', t.aboutTitle);
+  setText('about-desc', t.aboutDesc);
+  setText('about-license', t.aboutLicense);
+  setText('about-source-pre', t.aboutSourcePre);
   setText('placeholder-msg', t.placeholder);
   updateFooter();
   document.querySelectorAll('.lang-btn').forEach((b) =>
@@ -466,6 +483,20 @@ document.getElementById('lang-toggle').addEventListener('click', (e) => {
 // ---------- Filtre historiques / fictives ----------
 els.fltHistorical.addEventListener('change', applyAirlineFilter);
 els.fltFictional.addEventListener('change', applyAirlineFilter);
+
+// ---------- Fenêtre « À propos » ----------
+const REPO_URL = 'https://github.com/brackets-acrobat/Super-Constellation-Network-Timetables';
+const aboutModal = document.getElementById('about-modal');
+const openAbout = () => { aboutModal.hidden = false; };
+const closeAbout = () => { aboutModal.hidden = true; };
+document.getElementById('about-btn').addEventListener('click', openAbout);
+document.getElementById('about-close').addEventListener('click', closeAbout);
+aboutModal.addEventListener('click', (e) => { if (e.target === aboutModal) closeAbout(); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !aboutModal.hidden) closeAbout(); });
+document.getElementById('about-github').addEventListener('click', (e) => {
+  e.preventDefault();
+  if (window.timetables && window.timetables.openExternal) window.timetables.openExternal(REPO_URL);
+});
 
 // ---------- Go (anglais par défaut) ----------
 applyStaticI18n();

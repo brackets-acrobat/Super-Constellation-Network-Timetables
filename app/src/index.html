@@ -17,12 +17,25 @@
     </div>
     <div class="topbar-right">
       <div class="brand-era" id="brand-era">For the Red Wing Lockheed Super Constellation</div>
+      <button type="button" class="about-btn" id="about-btn" aria-label="À propos" title="À propos">?</button>
       <div class="lang-toggle" id="lang-toggle" role="group" aria-label="Language">
         <button type="button" class="lang-btn" data-lang="en">EN</button>
         <button type="button" class="lang-btn" data-lang="fr">FR</button>
       </div>
     </div>
   </header>
+
+  <div class="modal-overlay" id="about-modal" hidden>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="about-title">
+      <button type="button" class="modal-close" id="about-close" aria-label="Fermer / Close">×</button>
+      <h2 id="about-title">À PROPOS</h2>
+      <h3>SUPER CONSTELLATION NETWORK TIMETABLES (SCNT)</h3>
+      <p id="about-desc">Atlas interactif et bilingue des réseaux du Super Constellation — mi-outil historique rigoureux, mi-hommage nostalgique à l'aviation des années 50 — qui assume avec transparence la frontière entre le documenté et le reconstitué.</p>
+      <p id="about-license">Ce logiciel est distribué sous licence GPL-3.0 ou ultérieure.</p>
+      <p><span id="about-source-pre">Le code source de cette application est disponible sur </span><a href="#" id="about-github" class="ext-link">GitHub</a>.</p>
+      <p class="about-copy">Copyright 2026 Cyril MILANI.</p>
+    </div>
+  </div>
 
   <section class="selectors">
     <div class="field">

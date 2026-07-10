@@ -10,7 +10,7 @@ const fs = require('fs');
 
 const SRC = process.argv[2]
   ? path.resolve(process.argv[2])
-  : path.resolve(__dirname, '../l1049ico.png');
+  : path.resolve(__dirname, '../l1049icon2.png');
 const OUT_DIR = path.resolve(__dirname, '../build');
 const SIZES = [256, 128, 64, 48, 32, 16];
 
