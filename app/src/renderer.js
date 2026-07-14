@@ -21,6 +21,7 @@ const I18N = {
     aboutDesc: "An interactive, bilingual atlas of the Super Constellation's networks — part rigorous historical tool, part nostalgic tribute to 1950s aviation — that transparently owns the line between the documented and the reconstructed.",
     aboutLicense: 'This software is distributed under the GPL-3.0 license or later.',
     aboutSourcePre: 'The source code of this application is available on ',
+    aboutThanks: 'Thanks to Alexair for the authentic 1956 Air France tables and images.',
     phAirline: '— Select an airline —',
     phSheet: '— Select a network —',
     phFlight: '— Select a flight —',
@@ -49,6 +50,7 @@ const I18N = {
     aboutDesc: "Atlas interactif et bilingue des réseaux du Super Constellation — mi-outil historique rigoureux, mi-hommage nostalgique à l'aviation des années 50 — qui assume avec transparence la frontière entre le documenté et le reconstitué.",
     aboutLicense: 'Ce logiciel est distribué sous licence GPL-3.0 ou ultérieure.',
     aboutSourcePre: 'Le code source de cette application est disponible sur ',
+    aboutThanks: 'Merci à Alexair pour les tables et les images Air France authentiques de 1956.',
     phAirline: '— Choisir une compagnie —',
     phSheet: '— Choisir un réseau —',
     phFlight: '— Choisir un vol —',
@@ -204,6 +206,7 @@ function applyStaticI18n() {
   setText('about-desc', t.aboutDesc);
   setText('about-license', t.aboutLicense);
   setText('about-source-pre', t.aboutSourcePre);
+  setText('about-thanks', t.aboutThanks);
   setText('placeholder-msg', t.placeholder);
   updateFooter();
   document.querySelectorAll('.lang-btn').forEach((b) =>

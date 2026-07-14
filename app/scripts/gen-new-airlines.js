@@ -97,6 +97,8 @@ const COORDS = {
   // 4e lot (lignes fictives DC-4 / DC-6).
   'santiago': [-33.45, -70.67],
   'montevideo': [-34.90, -56.19],
+  'sao paulo': [-23.55, -46.63],
+  'são paulo': [-23.55, -46.63],
   'rhodes': [36.43, 28.22],
   'guatemala': [14.63, -90.51],
   'belize': [17.50, -88.20],
@@ -296,44 +298,52 @@ const airlines = [];
   airlines.push(a);
 }
 
-// --- Air France [S] ---
+// --- Air France [S] --- (réseau Super Constellation entièrement refondu d'après
+// l'indicateur officiel Air France, été 1956 : « Parisien Spécial » (Paris–New
+// York), prolongements Mexico (via NY et via Boston), Amérique du Sud (AF 093),
+// « Eastern Epicurean » (AF 170, Paris–Tokyo) et « L'Épicurien » (AF 568,
+// Paris–Londres). Vols retour reconstitués [R] par itinéraire miroir.)
 {
   const a = airline('air-france', 'Air France', 'Reseau_Air_France_L1049_sourced.xlsx');
   a.rawSheet('Atlantique & Amériques',
-    ['N° Vol', 'Axe / Ligne', 'Origine', 'Départ (HL)', 'Escale 1 (Arr. / Dép.)', 'Escale 2 (Arr. / Dép.)', 'Escale 3 (Arr. / Dép.)', 'Destination', 'Arrivée (HL)', 'Fréquence / Note'],
+    ['N° Vol', 'Axe / Ligne', 'Origine', 'Départ (HL)', 'Escale 1 (Arr. / Dép.)', 'Escale 2 (Arr. / Dép.)', 'Escale 3 (Arr. / Dép.)', 'Escale 4 (Arr. / Dép.)', 'Escale 5 (Arr. / Dép.)', 'Destination', 'Arrivée (HL)', 'Fréquence / Note'],
     [
-      ['AF 017', 'Atlantique Nord (Le Parisien)', 'Paris (ORY)', '20:00', 'Shannon (22:45 / 23:45)', 'Gander [Tech] (05:30 / 06:45 *)', '-', 'New York (IDL)', '10:15 *', 'Ligne prestige (nuit)'],
-      ['AF 018', 'Atlantique Nord (Retour)', 'New York (IDL)', '16:30', 'Gander [Tech] (21:45 / 22:45)', 'Shannon (07:30 / 08:30 *)', '-', 'Paris (ORY)', '11:45 *', 'Vol de nuit'],
-      ['AF 211', 'Antilles & Amérique Centrale', 'Paris (ORY)', '10:00', 'Santa Maria (15:00 / 16:15)', 'Pointe-à-Pitre (00:30 / 02:00 *)', 'Caracas (05:00 / 06:15 *)', 'Bogota (BOG)', '08:15 *', 'Route des Antilles'],
-      ['AF 212', 'Antilles & Amérique Centrale (Retour)', 'Bogota (BOG)', '16:00', 'Caracas (18:00 / 19:15)', 'Pointe-à-Pitre (22:15 / 23:45)', 'Santa Maria (08:00 * / 09:15 *)', 'Paris (ORY)', '14:15 *', 'Route des Antilles'],
-      ['AF 501', 'Atlantique Sud', 'Paris (ORY)', '18:30', 'Casablanca (22:15 / 23:30)', 'Dakar (06:00 / 07:30 *)', 'Recife (16:00 / 17:00 *)', 'Rio de Janeiro (GIG)', '21:30 *', 'Prolongé Buenos Aires'],
-      ['AF 502', 'Atlantique Sud (Tronçon final)', 'Rio de Janeiro (GIG)', '08:00', '-', '-', '-', 'Buenos Aires (EZE)', '11:30', 'Correspondance AF 501'],
-      ['AF 503', 'Atlantique Sud (Retour)', 'Buenos Aires (EZE)', '08:00', '-', '-', '-', 'Rio de Janeiro (GIG)', '11:30', 'Tronçon initial (corr. AF 504)'],
-      ['AF 504', 'Atlantique Sud (Retour)', 'Rio de Janeiro (GIG)', '13:00', 'Recife (17:30 / 18:30)', 'Dakar (DKR) (03:00 * / 04:30 *)', 'Casablanca (11:00 * / 12:15 *)', 'Paris (ORY)', '16:00 *', 'Depuis Buenos Aires (corr. AF 503)'],
+      ['AF 045', 'Atlantique Nord (Parisien Spécial)', 'Paris (ORY)', '23:00', '-', '-', '-', '-', '-', 'New York (IDL)', '08:40 *', 'Quotidien'],
+      ['AF 046', 'Atlantique Nord (Parisien Spécial) (Retour)', 'New York (IDL)', '19:00', '-', '-', '-', '-', '-', 'Paris (ORY)', '08:00 *', 'Quotidien'],
+      ['AF 079', 'Atlantique Nord (Mexico via Boston)', 'Paris (ORY)', '22:00', 'Boston (BOS) (08:40 * / 09:20 *)', 'New York (IDL) (10:30 * / 12:00 *)', '-', '-', '-', 'Mexico (MEX)', '17:55 *', 'Mardi, Jeudi, Samedi'],
+      ['AF 080', 'Atlantique Nord (Mexico via Boston) (Retour)', 'Mexico (MEX)', '08:00', 'New York (IDL) (13:35 / 15:00)', 'Boston (BOS) (16:00 / 17:00)', '-', '-', '-', 'Paris (ORY)', '06:30 *', 'Mercredi, Vendredi, Dimanche'],
+      ['AF 071', 'Atlantique Nord (Mexico)', 'Paris (ORY)', '22:00', 'New York (IDL) (09:20 * / 12:00 *)', '-', '-', '-', '-', 'Mexico (MEX)', '17:55 *', 'Quotidien'],
+      ['AF 072', 'Atlantique Nord (Mexico) (Retour)', 'Mexico (MEX)', '09:00', 'New York (IDL) (14:35 / 16:30)', '-', '-', '-', '-', 'Paris (ORY)', '06:00 *', 'Quotidien'],
+      ['AF 093', 'Amérique du Sud', 'Paris (ORY)', '13:00', 'Madrid (15:45 / 16:45)', 'Dakar (23:20 / 00:35 *)', 'Rio de Janeiro (GIG) (09:00 * / 10:15 *)', 'São Paulo (CGH) (11:40 * / 12:25 *)', 'Montevideo (16:25 * / 16:55 *)', 'Buenos Aires (EZE)', '17:50 *', 'Jeudi, Dimanche'],
+      ['AF 094', 'Amérique du Sud (Retour)', 'Buenos Aires (EZE)', '09:00', 'Montevideo (09:55 / 10:25)', 'São Paulo (CGH) (14:00 / 14:45)', 'Rio de Janeiro (GIG) (16:00 / 17:00)', 'Dakar (01:30 * / 02:45 *)', 'Madrid (11:30 * / 12:30 *)', 'Paris (ORY)', '14:45 *', 'Lundi, Vendredi'],
     ],
     [
       "Sources : Air France reçoit son 1er L-1049C (F-BGNJ) le 2 nov. 1953, mis en ligne le 15 nov. 1953 ; 24 « Super Connies » (10× 1049C + 14× 1049G), 2e opérateur mondial après TWA.",
-      "[S] Sourcé : axes réellement ouverts au L-1049C dès 1953 — Paris–New York, Paris–Buenos Aires, Pointe-à-Pitre, Caracas, Tokyo ; escales techniques Gander/Shannon.",
-      "[R] Reconstitué : numéros de vol et horaires — plausibles mais non issus d'un timetable original.",
+      "[S] Sourcé : réseau et horaires d'après l'indicateur officiel Air France (été 1956) — « Parisien Spécial » (Paris–New York), prolongements vers Mexico (via New York ou via Boston) et Amérique du Sud (AF 093) Paris–Madrid–Dakar–Rio–São Paulo–Montevideo–Buenos Aires.",
+      "[R] Vols retour reconstitués (itinéraire miroir) : horaires ALLER conformes à l'indicateur Air France 1956, horaires RETOUR plausibles.",
       "* Arrivée le lendemain (+1 jour). HL : Heure Locale. [Tech] = escale technique.",
-      "[R] Vols retour ajoutés automatiquement (itinéraire miroir, horaires reconstitués).",
-      "[R] AF 503/504 : service inverse complet de l’Atlantique Sud (Buenos Aires → Rio → Recife → Dakar → Casablanca → Paris), reconstitué.",
     ]);
-  a.rawSheet('Orient & Afrique',
-    ['N° Vol', 'Axe / Ligne', 'Origine', 'Départ (HL)', 'Escale 1 (Arr. / Dép.)', 'Escale 2 (Arr. / Dép.)', 'Escale 3 (Arr. / Dép.)', 'Escale 4 (Arr. / Dép.)', 'Escale 5 (Arr. / Dép.)', 'Destination', 'Arrivée (HL)', 'Note'],
+  a.rawSheet('Extrême-Orient',
+    ['N° Vol', 'Axe / Ligne', 'Origine', 'Départ (HL)', 'Escale 1 (Arr. / Dép.)', 'Escale 2 (Arr. / Dép.)', 'Escale 3 (Arr. / Dép.)', 'Escale 4 (Arr. / Dép.)', 'Escale 5 (Arr. / Dép.)', 'Escale 6 (Arr. / Dép.)', 'Destination', 'Arrivée (HL)', 'Fréquence / Note'],
     [
-      ['AF 184', 'Extrême-Orient (Le Tokyo)', 'Paris (ORY)', '13:00 (Mer)', 'Rome (17:00 / 18:00)', 'Beyrouth (23:30 / 00:45 *)', 'Karachi (08:30 / 09:45 *)', 'Calcutta (15:00 / 16:15 *)', 'Saïgon (23:30 * / 01:00)', 'Tokyo (HND)', '15:30 (Ven)', 'Ligne du Cap au Japon'],
-      ['AF 185', 'Extrême-Orient (Le Tokyo) (Retour)', 'Tokyo (HND)', '16:00', 'Saïgon (06:30 * / 08:00 *)', 'Calcutta (15:15 * / 16:30 *)', 'Karachi (21:45 * / 23:00 *)', 'Beyrouth (06:45 ** / 08:00 **)', 'Rome (13:30 ** / 14:30 **)', 'Paris (ORY)', '18:30 **', 'Ligne du Cap au Japon'],
-      ['AF 186', 'Indochine (Saïgon)', 'Paris (ORY)', '14:00 (Mer)', 'Rome (18:00 / 19:00)', 'Le Caire (CAI) (23:30 / 00:45 *)', 'Karachi (08:00 / 09:15 *)', 'Calcutta (14:30 / 15:45 *)', 'Bangkok (BKK) (21:00 / 22:15 *)', 'Saïgon (SGN)', '01:30 (Ven)', 'Courrier d’Indochine'],
-      ['AF 187', 'Indochine (Saïgon) (Retour)', 'Saïgon (SGN)', '16:00', 'Bangkok (BKK) (19:15 / 20:30)', 'Calcutta (01:45 * / 03:00 *)', 'Karachi (08:15 * / 09:30 *)', 'Le Caire (CAI) (16:45 * / 18:00 *)', 'Rome (22:30 * / 23:30 *)', 'Paris (ORY)', '03:30 **', 'Courrier d’Indochine'],
-      ['AF 405', 'Afrique Centrale', 'Paris (ORY)', '22:30', 'Alger (01:45 / 02:45 *)', 'Kano [Tech] (10:15 / 11:30 *)', '-', '-', '-', 'Brazzaville (BZV)', '16:45 *', 'Axe transsaharien'],
-      ['AF 406', 'Afrique Centrale (Retour)', 'Brazzaville (BZV)', '16:00', 'Kano [Tech] (21:15 / 22:30)', 'Alger (06:00 * / 07:00 *)', '-', '-', '-', 'Paris (ORY)', '10:15 *', 'Axe transsaharien'],
+      ['AF 170', 'Extrême-Orient (Eastern Epicurean)', 'Paris (ORY)', '17:40', 'Rome (20:30 / 21:50)', 'Téhéran (08:30 * / 10:00 *)', 'Karachi (16:00 * / 17:30 *)', 'Bangkok (03:50 ** / 04:50 **)', 'Saïgon (06:40 ** / 08:10 **)', 'Manille (13:10 ** / 14:10 **)', 'Tokyo (HND)', '22:15 **', 'Mardi, Samedi'],
+      ['AF 171', 'Extrême-Orient (Eastern Epicurean) (Retour)', 'Tokyo (HND)', '16:00', 'Manille (20:00 / 21:00)', 'Saïgon (01:15 * / 02:15 *)', 'Bangkok (04:00 * / 05:00 *)', 'Karachi (12:00 * / 13:00 *)', 'Téhéran (18:00 * / 19:00 *)', 'Rome (01:30 ** / 02:30 **)', 'Paris (ORY)', '05:30 **', 'Jeudi, Dimanche'],
     ],
     [
-      "[S] Sourcé : Air France exploite le L-1049 vers l'Extrême-Orient (Tokyo, Saïgon/Indochine) et l'Afrique centrale ; corridors et escales conformes à l'époque.",
-      "[R] Reconstitué : numéros de vol et horaires exacts.",
-      "* Arrivée le lendemain (+1 jour). (Mer)/(Ven) = jour de circulation. [Tech] = escale technique.",
-      "[R] Vols retour ajoutés automatiquement (itinéraire miroir, horaires reconstitués).",
+      "[S] Sourcé : le service « Eastern Epicurean » (AF 170, Super Constellation) reliait Paris–Rome–Téhéran–Karachi–Bangkok–Saïgon–Manille–Tokyo, d'après l'indicateur officiel Air France (été 1956).",
+      "[R] Vol retour reconstitué (itinéraire miroir) ; horaires aller conformes à l'indicateur, retour plausible.",
+      "* / ** : arrivée à J+1 / J+2. HL : Heure Locale.",
+    ]);
+  a.rawSheet('Europe',
+    ['N° Vol', 'Axe / Ligne', 'Origine', 'Départ (HL)', 'Destination', 'Arrivée (HL)', 'Fréquence / Note'],
+    [
+      ['AF 568', 'Europe (Épicurien)', 'Paris (ORY)', '12:00', 'Londres (LHR)', '13:15', 'Quotidien'],
+      ['AF 569', 'Europe (Épicurien) (Retour)', 'Londres (LHR)', '14:00', 'Paris (ORY)', '15:15', 'Quotidien'],
+    ],
+    [
+      "[S] Sourcé : le service « L'Épicurien » (AF 568, Super Constellation) reliait Paris (Orly, 12:00) à Londres (13:15), d'après l'indicateur officiel Air France (été 1956) ; vol court de prestige.",
+      "[R] Vol retour reconstitué (Londres–Paris) ; horaire aller conforme à l'indicateur Air France 1956.",
+      "HL : Heure Locale.",
     ]);
   airlines.push(a);
 }

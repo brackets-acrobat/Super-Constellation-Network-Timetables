@@ -1,7 +1,23 @@
 // Traductions EN additionnelles pour le jeu de données « sourced » (build-time).
 'use strict';
 module.exports = {
+  "SHEETS": {
+    "Europe": "Europe",
+    "Extrême-Orient": "Far East"
+  },
   "LINES": {
+    "Atlantique Nord (Parisien Spécial)": "North Atlantic (Parisien Spécial)",
+    "Atlantique Nord (Parisien Spécial) (Retour)": "North Atlantic (Parisien Spécial) (Return)",
+    "Atlantique Nord (Mexico via Boston)": "North Atlantic (Mexico City via Boston)",
+    "Atlantique Nord (Mexico via Boston) (Retour)": "North Atlantic (Mexico City via Boston) (Return)",
+    "Atlantique Nord (Mexico)": "North Atlantic (Mexico City)",
+    "Atlantique Nord (Mexico) (Retour)": "North Atlantic (Mexico City) (Return)",
+    "Amérique du Sud": "South America",
+    "Amérique du Sud (Retour)": "South America (Return)",
+    "Extrême-Orient (Eastern Epicurean)": "Far East (Eastern Epicurean)",
+    "Extrême-Orient (Eastern Epicurean) (Retour)": "Far East (Eastern Epicurean) (Return)",
+    "Europe (Épicurien)": "Europe (L'Épicurien)",
+    "Europe (Épicurien) (Retour)": "Europe (L'Épicurien) (Return)",
     "Transcontinental Multi-Escales": "Multi-Stop Transcontinental",
     "Liaison Constellation": "Constellation Link",
     "Liaison Constellation (Retour)": "Constellation Link (Return)",
@@ -43,6 +59,7 @@ module.exports = {
     "IGS Corridor Sud (Retour)": "IGS Southern Corridor (Return)"
   },
   "FREQ": {
+    "Jeudi, Dimanche": "Thursday, Sunday",
     "Lundi, Mercredi, Vendredi": "Monday, Wednesday, Friday",
     "Vendredi": "Friday",
     "Ligne prestige (nuit)": "Prestige line (night)",
@@ -69,6 +86,13 @@ module.exports = {
     "Contournement du blocus terrestre": "Bypassing the land blockade"
   },
   "NOTES": {
+    "[S] Sourcé : réseau et horaires d'après l'indicateur officiel Air France (été 1956) — « Parisien Spécial » (Paris–New York), prolongements vers Mexico (via New York ou via Boston) et Amérique du Sud (AF 093) Paris–Madrid–Dakar–Rio–São Paulo–Montevideo–Buenos Aires.": "[S] Sourced: network and schedules from the official Air France timetable (summer 1956) — 'Parisien Spécial' (Paris–New York), extensions to Mexico City (via New York or via Boston) and South America (AF 093) Paris–Madrid–Dakar–Rio–São Paulo–Montevideo–Buenos Aires.",
+    "[R] Vols retour reconstitués (itinéraire miroir) : horaires ALLER conformes à l'indicateur Air France 1956, horaires RETOUR plausibles.": "[R] Return flights reconstructed (mirror itinerary): OUTBOUND times per the 1956 Air France timetable, RETURN times plausible.",
+    "[S] Sourcé : le service « Eastern Epicurean » (AF 170, Super Constellation) reliait Paris–Rome–Téhéran–Karachi–Bangkok–Saïgon–Manille–Tokyo, d'après l'indicateur officiel Air France (été 1956).": "[S] Sourced: the 'Eastern Epicurean' service (AF 170, Super Constellation) linked Paris–Rome–Tehran–Karachi–Bangkok–Saigon–Manila–Tokyo, per the official Air France timetable (summer 1956).",
+    "[R] Vol retour reconstitué (itinéraire miroir) ; horaires aller conformes à l'indicateur, retour plausible.": "[R] Return flight reconstructed (mirror itinerary); outbound times per the timetable, return plausible.",
+    "* / ** : arrivée à J+1 / J+2. HL : Heure Locale.": "* / **: arrival on D+1 / D+2. LT: Local Time.",
+    "[S] Sourcé : le service « L'Épicurien » (AF 568, Super Constellation) reliait Paris (Orly, 12:00) à Londres (13:15), d'après l'indicateur officiel Air France (été 1956) ; vol court de prestige.": "[S] Sourced: the 'L'Épicurien' service (AF 568, Super Constellation) linked Paris (Orly, 12:00) to London (13:15), per the official Air France timetable (summer 1956); a short prestige flight.",
+    "[R] Vol retour reconstitué (Londres–Paris) ; horaire aller conforme à l'indicateur Air France 1956.": "[R] Return flight reconstructed (London–Paris); outbound time per the 1956 Air France timetable.",
     "Sources : services et routes d'après TWA Museum (twamuseum.com), Metro Airport News et Wikipedia (Lockheed Constellation).": "Sources: services and routes per the TWA Museum (twamuseum.com), Metro Airport News and Wikipedia (Lockheed Constellation).",
     "[S] Sourcé : « The Ambassador » — 1er service transcontinental régulier SANS ESCALE (est-bound) inauguré le 19 octobre 1953 en Lockheed L-1049C, en « un peu moins de 8 heures » ; « The Sky Chief » transcontinental ; hubs TWA de Chicago (Midway) et Kansas City (MKC).": "[S] Sourced: 'The Ambassador' — first sustained nonstop (eastbound) transcontinental service, inaugurated 19 October 1953 with the Lockheed L-1049C, in 'just under 8 hours'; 'The Sky Chief' transcontinental; TWA hubs at Chicago (Midway) and Kansas City (MKC).",
     "[R] Reconstitué : numéros de vol et horaires à la minute — plausibles pour l'époque mais NON issus d'un timetable original.": "[R] Reconstructed: flight numbers and to-the-minute schedules — plausible for the period but NOT taken from an original timetable.",

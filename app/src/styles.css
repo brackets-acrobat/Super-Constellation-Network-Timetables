@@ -278,9 +278,15 @@ select:disabled { opacity: .45; cursor: not-allowed; background-color: #ede5cf; 
   gap: 14px;
   color: var(--ink-soft);
   text-align: center;
+  /* Image d'accueil affichée à sa taille d'origine (1635 × 810 px). */
+  background-image: url("assets/fond-accueil.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1635px 810px;
 }
-.placeholder-star { font-size: 54px; color: var(--gold); opacity: .55; }
-.placeholder p { max-width: 420px; font-size: 15px; letter-spacing: .5px; }
+/* À l'accueil (aucune ligne sélectionnée), seule l'image de fond est visible. */
+.placeholder-star,
+.placeholder p { display: none; }
 
 /* Carte de vol */
 .flight-card {

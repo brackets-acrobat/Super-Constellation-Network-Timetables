@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T22:24:29.050Z",
+  "generatedAt": "2026-07-14T22:37:06.116Z",
   "aircraft": "Lockheed L-1049 Super Constellation",
   "airlines": [
     {
@@ -1113,73 +1113,36 @@
           "name": "Atlantique & Amériques",
           "notes": [
             "Sources : Air France reçoit son 1er L-1049C (F-BGNJ) le 2 nov. 1953, mis en ligne le 15 nov. 1953 ; 24 « Super Connies » (10× 1049C + 14× 1049G), 2e opérateur mondial après TWA.",
-            "[S] Sourcé : axes réellement ouverts au L-1049C dès 1953 — Paris–New York, Paris–Buenos Aires, Pointe-à-Pitre, Caracas, Tokyo ; escales techniques Gander/Shannon.",
-            "[R] Reconstitué : numéros de vol et horaires — plausibles mais non issus d'un timetable original.",
-            "* Arrivée le lendemain (+1 jour). HL : Heure Locale. [Tech] = escale technique.",
-            "[R] Vols retour ajoutés automatiquement (itinéraire miroir, horaires reconstitués).",
-            "[R] AF 503/504 : service inverse complet de l’Atlantique Sud (Buenos Aires → Rio → Recife → Dakar → Casablanca → Paris), reconstitué."
+            "[S] Sourcé : réseau et horaires d'après l'indicateur officiel Air France (été 1956) — « Parisien Spécial » (Paris–New York), prolongements vers Mexico (via New York ou via Boston) et Amérique du Sud (AF 093) Paris–Madrid–Dakar–Rio–São Paulo–Montevideo–Buenos Aires.",
+            "[R] Vols retour reconstitués (itinéraire miroir) : horaires ALLER conformes à l'indicateur Air France 1956, horaires RETOUR plausibles.",
+            "* Arrivée le lendemain (+1 jour). HL : Heure Locale. [Tech] = escale technique."
           ],
           "flights": [
             {
               "id": "air-france-atlantique-ameriques-0",
-              "flightNo": "AF 017",
-              "line": "Atlantique Nord (Le Parisien)",
+              "flightNo": "AF 045",
+              "line": "Atlantique Nord (Parisien Spécial)",
               "lineHeader": "Axe / Ligne",
               "meta": [],
               "origin": "Paris (ORY)",
-              "departure": "20:00",
+              "departure": "23:00",
               "destination": "New York (IDL)",
-              "arrival": "10:15 *",
-              "frequency": "Ligne prestige (nuit)",
+              "arrival": "08:40 *",
+              "frequency": "Quotidien",
               "frequencyHeader": "Fréquence / Note",
-              "stops": [
-                {
-                  "place": "Shannon",
-                  "arrival": "22:45",
-                  "arrivalNextDay": false,
-                  "departure": "23:45",
-                  "departureNextDay": false
-                },
-                {
-                  "place": "Gander [Tech]",
-                  "arrival": "05:30",
-                  "arrivalNextDay": false,
-                  "departure": "06:45",
-                  "departureNextDay": true
-                }
-              ],
+              "stops": [],
               "itinerary": [
                 {
                   "place": "Paris (ORY)",
                   "arrival": null,
-                  "departure": "20:00",
+                  "departure": "23:00",
                   "role": "origin",
                   "lat": 48.86,
                   "lon": 2.35
                 },
                 {
-                  "place": "Shannon",
-                  "arrival": "22:45",
-                  "arrivalNextDay": false,
-                  "departure": "23:45",
-                  "departureNextDay": false,
-                  "role": "stop",
-                  "lat": 52.7,
-                  "lon": -8.92
-                },
-                {
-                  "place": "Gander [Tech]",
-                  "arrival": "05:30",
-                  "arrivalNextDay": false,
-                  "departure": "06:45",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 48.95,
-                  "lon": -54.61
-                },
-                {
                   "place": "New York (IDL)",
-                  "arrival": "10:15 *",
+                  "arrival": "08:40 *",
                   "departure": null,
                   "role": "destination",
                   "lat": 40.71,
@@ -1189,64 +1152,29 @@
             },
             {
               "id": "air-france-atlantique-ameriques-1",
-              "flightNo": "AF 018",
-              "line": "Atlantique Nord (Retour)",
+              "flightNo": "AF 046",
+              "line": "Atlantique Nord (Parisien Spécial) (Retour)",
               "lineHeader": "Axe / Ligne",
               "meta": [],
               "origin": "New York (IDL)",
-              "departure": "16:30",
+              "departure": "19:00",
               "destination": "Paris (ORY)",
-              "arrival": "11:45 *",
-              "frequency": "Vol de nuit",
+              "arrival": "08:00 *",
+              "frequency": "Quotidien",
               "frequencyHeader": "Fréquence / Note",
-              "stops": [
-                {
-                  "place": "Gander [Tech]",
-                  "arrival": "21:45",
-                  "arrivalNextDay": false,
-                  "departure": "22:45",
-                  "departureNextDay": false
-                },
-                {
-                  "place": "Shannon",
-                  "arrival": "07:30",
-                  "arrivalNextDay": false,
-                  "departure": "08:30",
-                  "departureNextDay": true
-                }
-              ],
+              "stops": [],
               "itinerary": [
                 {
                   "place": "New York (IDL)",
                   "arrival": null,
-                  "departure": "16:30",
+                  "departure": "19:00",
                   "role": "origin",
                   "lat": 40.71,
                   "lon": -74.01
                 },
                 {
-                  "place": "Gander [Tech]",
-                  "arrival": "21:45",
-                  "arrivalNextDay": false,
-                  "departure": "22:45",
-                  "departureNextDay": false,
-                  "role": "stop",
-                  "lat": 48.95,
-                  "lon": -54.61
-                },
-                {
-                  "place": "Shannon",
-                  "arrival": "07:30",
-                  "arrivalNextDay": false,
-                  "departure": "08:30",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 52.7,
-                  "lon": -8.92
-                },
-                {
                   "place": "Paris (ORY)",
-                  "arrival": "11:45 *",
+                  "arrival": "08:00 *",
                   "departure": null,
                   "role": "destination",
                   "lat": 48.86,
@@ -1256,36 +1184,29 @@
             },
             {
               "id": "air-france-atlantique-ameriques-2",
-              "flightNo": "AF 211",
-              "line": "Antilles & Amérique Centrale",
+              "flightNo": "AF 079",
+              "line": "Atlantique Nord (Mexico via Boston)",
               "lineHeader": "Axe / Ligne",
               "meta": [],
               "origin": "Paris (ORY)",
-              "departure": "10:00",
-              "destination": "Bogota (BOG)",
-              "arrival": "08:15 *",
-              "frequency": "Route des Antilles",
+              "departure": "22:00",
+              "destination": "Mexico (MEX)",
+              "arrival": "17:55 *",
+              "frequency": "Mardi, Jeudi, Samedi",
               "frequencyHeader": "Fréquence / Note",
               "stops": [
                 {
-                  "place": "Santa Maria",
-                  "arrival": "15:00",
-                  "arrivalNextDay": false,
-                  "departure": "16:15",
-                  "departureNextDay": false
-                },
-                {
-                  "place": "Pointe-à-Pitre",
-                  "arrival": "00:30",
-                  "arrivalNextDay": false,
-                  "departure": "02:00",
+                  "place": "Boston (BOS)",
+                  "arrival": "08:40",
+                  "arrivalNextDay": true,
+                  "departure": "09:20",
                   "departureNextDay": true
                 },
                 {
-                  "place": "Caracas",
-                  "arrival": "05:00",
-                  "arrivalNextDay": false,
-                  "departure": "06:15",
+                  "place": "New York (IDL)",
+                  "arrival": "10:30",
+                  "arrivalNextDay": true,
+                  "departure": "12:00",
                   "departureNextDay": true
                 }
               ],
@@ -1293,128 +1214,101 @@
                 {
                   "place": "Paris (ORY)",
                   "arrival": null,
-                  "departure": "10:00",
+                  "departure": "22:00",
                   "role": "origin",
                   "lat": 48.86,
                   "lon": 2.35
                 },
                 {
-                  "place": "Santa Maria",
-                  "arrival": "15:00",
-                  "arrivalNextDay": false,
-                  "departure": "16:15",
-                  "departureNextDay": false,
-                  "role": "stop",
-                  "lat": 36.97,
-                  "lon": -25.1
-                },
-                {
-                  "place": "Pointe-à-Pitre",
-                  "arrival": "00:30",
-                  "arrivalNextDay": false,
-                  "departure": "02:00",
+                  "place": "Boston (BOS)",
+                  "arrival": "08:40",
+                  "arrivalNextDay": true,
+                  "departure": "09:20",
                   "departureNextDay": true,
                   "role": "stop",
-                  "lat": 16.24,
-                  "lon": -61.53
+                  "lat": 42.36,
+                  "lon": -71.06
                 },
                 {
-                  "place": "Caracas",
-                  "arrival": "05:00",
-                  "arrivalNextDay": false,
-                  "departure": "06:15",
+                  "place": "New York (IDL)",
+                  "arrival": "10:30",
+                  "arrivalNextDay": true,
+                  "departure": "12:00",
                   "departureNextDay": true,
                   "role": "stop",
-                  "lat": 10.48,
-                  "lon": -66.9
+                  "lat": 40.71,
+                  "lon": -74.01
                 },
                 {
-                  "place": "Bogota (BOG)",
-                  "arrival": "08:15 *",
+                  "place": "Mexico (MEX)",
+                  "arrival": "17:55 *",
                   "departure": null,
                   "role": "destination",
-                  "lat": 4.71,
-                  "lon": -74.07
+                  "lat": 19.43,
+                  "lon": -99.13
                 }
               ]
             },
             {
               "id": "air-france-atlantique-ameriques-3",
-              "flightNo": "AF 212",
-              "line": "Antilles & Amérique Centrale (Retour)",
+              "flightNo": "AF 080",
+              "line": "Atlantique Nord (Mexico via Boston) (Retour)",
               "lineHeader": "Axe / Ligne",
               "meta": [],
-              "origin": "Bogota (BOG)",
-              "departure": "16:00",
+              "origin": "Mexico (MEX)",
+              "departure": "08:00",
               "destination": "Paris (ORY)",
-              "arrival": "14:15 *",
-              "frequency": "Route des Antilles",
+              "arrival": "06:30 *",
+              "frequency": "Mercredi, Vendredi, Dimanche",
               "frequencyHeader": "Fréquence / Note",
               "stops": [
                 {
-                  "place": "Caracas",
-                  "arrival": "18:00",
+                  "place": "New York (IDL)",
+                  "arrival": "13:35",
                   "arrivalNextDay": false,
-                  "departure": "19:15",
+                  "departure": "15:00",
                   "departureNextDay": false
                 },
                 {
-                  "place": "Pointe-à-Pitre",
-                  "arrival": "22:15",
+                  "place": "Boston (BOS)",
+                  "arrival": "16:00",
                   "arrivalNextDay": false,
-                  "departure": "23:45",
+                  "departure": "17:00",
                   "departureNextDay": false
-                },
-                {
-                  "place": "Santa Maria",
-                  "arrival": "08:00",
-                  "arrivalNextDay": true,
-                  "departure": "09:15",
-                  "departureNextDay": true
                 }
               ],
               "itinerary": [
                 {
-                  "place": "Bogota (BOG)",
+                  "place": "Mexico (MEX)",
                   "arrival": null,
-                  "departure": "16:00",
+                  "departure": "08:00",
                   "role": "origin",
-                  "lat": 4.71,
-                  "lon": -74.07
+                  "lat": 19.43,
+                  "lon": -99.13
                 },
                 {
-                  "place": "Caracas",
-                  "arrival": "18:00",
+                  "place": "New York (IDL)",
+                  "arrival": "13:35",
                   "arrivalNextDay": false,
-                  "departure": "19:15",
+                  "departure": "15:00",
                   "departureNextDay": false,
                   "role": "stop",
-                  "lat": 10.48,
-                  "lon": -66.9
+                  "lat": 40.71,
+                  "lon": -74.01
                 },
                 {
-                  "place": "Pointe-à-Pitre",
-                  "arrival": "22:15",
+                  "place": "Boston (BOS)",
+                  "arrival": "16:00",
                   "arrivalNextDay": false,
-                  "departure": "23:45",
+                  "departure": "17:00",
                   "departureNextDay": false,
                   "role": "stop",
-                  "lat": 16.24,
-                  "lon": -61.53
-                },
-                {
-                  "place": "Santa Maria",
-                  "arrival": "08:00",
-                  "arrivalNextDay": true,
-                  "departure": "09:15",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 36.97,
-                  "lon": -25.1
+                  "lat": 42.36,
+                  "lon": -71.06
                 },
                 {
                   "place": "Paris (ORY)",
-                  "arrival": "14:15 *",
+                  "arrival": "06:30 *",
                   "departure": null,
                   "role": "destination",
                   "lat": 48.86,
@@ -1424,36 +1318,22 @@
             },
             {
               "id": "air-france-atlantique-ameriques-4",
-              "flightNo": "AF 501",
-              "line": "Atlantique Sud",
+              "flightNo": "AF 071",
+              "line": "Atlantique Nord (Mexico)",
               "lineHeader": "Axe / Ligne",
               "meta": [],
               "origin": "Paris (ORY)",
-              "departure": "18:30",
-              "destination": "Rio de Janeiro (GIG)",
-              "arrival": "21:30 *",
-              "frequency": "Prolongé Buenos Aires",
+              "departure": "22:00",
+              "destination": "Mexico (MEX)",
+              "arrival": "17:55 *",
+              "frequency": "Quotidien",
               "frequencyHeader": "Fréquence / Note",
               "stops": [
                 {
-                  "place": "Casablanca",
-                  "arrival": "22:15",
-                  "arrivalNextDay": false,
-                  "departure": "23:30",
-                  "departureNextDay": false
-                },
-                {
-                  "place": "Dakar",
-                  "arrival": "06:00",
-                  "arrivalNextDay": false,
-                  "departure": "07:30",
-                  "departureNextDay": true
-                },
-                {
-                  "place": "Recife",
-                  "arrival": "16:00",
-                  "arrivalNextDay": false,
-                  "departure": "17:00",
+                  "place": "New York (IDL)",
+                  "arrival": "09:20",
+                  "arrivalNextDay": true,
+                  "departure": "12:00",
                   "departureNextDay": true
                 }
               ],
@@ -1461,192 +1341,310 @@
                 {
                   "place": "Paris (ORY)",
                   "arrival": null,
-                  "departure": "18:30",
+                  "departure": "22:00",
                   "role": "origin",
                   "lat": 48.86,
                   "lon": 2.35
                 },
                 {
-                  "place": "Casablanca",
-                  "arrival": "22:15",
-                  "arrivalNextDay": false,
-                  "departure": "23:30",
-                  "departureNextDay": false,
-                  "role": "stop",
-                  "lat": 33.57,
-                  "lon": -7.59
-                },
-                {
-                  "place": "Dakar",
-                  "arrival": "06:00",
-                  "arrivalNextDay": false,
-                  "departure": "07:30",
+                  "place": "New York (IDL)",
+                  "arrival": "09:20",
+                  "arrivalNextDay": true,
+                  "departure": "12:00",
                   "departureNextDay": true,
                   "role": "stop",
-                  "lat": 14.72,
-                  "lon": -17.47
+                  "lat": 40.71,
+                  "lon": -74.01
                 },
                 {
-                  "place": "Recife",
-                  "arrival": "16:00",
-                  "arrivalNextDay": false,
-                  "departure": "17:00",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": -8.05,
-                  "lon": -34.88
-                },
-                {
-                  "place": "Rio de Janeiro (GIG)",
-                  "arrival": "21:30 *",
+                  "place": "Mexico (MEX)",
+                  "arrival": "17:55 *",
                   "departure": null,
                   "role": "destination",
-                  "lat": -22.91,
-                  "lon": -43.17
+                  "lat": 19.43,
+                  "lon": -99.13
                 }
               ]
             },
             {
               "id": "air-france-atlantique-ameriques-5",
-              "flightNo": "AF 502",
-              "line": "Atlantique Sud (Tronçon final)",
+              "flightNo": "AF 072",
+              "line": "Atlantique Nord (Mexico) (Retour)",
               "lineHeader": "Axe / Ligne",
               "meta": [],
-              "origin": "Rio de Janeiro (GIG)",
-              "departure": "08:00",
-              "destination": "Buenos Aires (EZE)",
-              "arrival": "11:30",
-              "frequency": "Correspondance AF 501",
+              "origin": "Mexico (MEX)",
+              "departure": "09:00",
+              "destination": "Paris (ORY)",
+              "arrival": "06:00 *",
+              "frequency": "Quotidien",
               "frequencyHeader": "Fréquence / Note",
-              "stops": [],
+              "stops": [
+                {
+                  "place": "New York (IDL)",
+                  "arrival": "14:35",
+                  "arrivalNextDay": false,
+                  "departure": "16:30",
+                  "departureNextDay": false
+                }
+              ],
               "itinerary": [
                 {
-                  "place": "Rio de Janeiro (GIG)",
+                  "place": "Mexico (MEX)",
                   "arrival": null,
-                  "departure": "08:00",
+                  "departure": "09:00",
                   "role": "origin",
-                  "lat": -22.91,
-                  "lon": -43.17
+                  "lat": 19.43,
+                  "lon": -99.13
                 },
                 {
-                  "place": "Buenos Aires (EZE)",
-                  "arrival": "11:30",
+                  "place": "New York (IDL)",
+                  "arrival": "14:35",
+                  "arrivalNextDay": false,
+                  "departure": "16:30",
+                  "departureNextDay": false,
+                  "role": "stop",
+                  "lat": 40.71,
+                  "lon": -74.01
+                },
+                {
+                  "place": "Paris (ORY)",
+                  "arrival": "06:00 *",
                   "departure": null,
                   "role": "destination",
-                  "lat": -34.61,
-                  "lon": -58.38
+                  "lat": 48.86,
+                  "lon": 2.35
                 }
               ]
             },
             {
               "id": "air-france-atlantique-ameriques-6",
-              "flightNo": "AF 503",
-              "line": "Atlantique Sud (Retour)",
+              "flightNo": "AF 093",
+              "line": "Amérique du Sud",
               "lineHeader": "Axe / Ligne",
               "meta": [],
-              "origin": "Buenos Aires (EZE)",
-              "departure": "08:00",
-              "destination": "Rio de Janeiro (GIG)",
-              "arrival": "11:30",
-              "frequency": "Tronçon initial (corr. AF 504)",
-              "frequencyHeader": "Fréquence / Note",
-              "stops": [],
-              "itinerary": [
-                {
-                  "place": "Buenos Aires (EZE)",
-                  "arrival": null,
-                  "departure": "08:00",
-                  "role": "origin",
-                  "lat": -34.61,
-                  "lon": -58.38
-                },
-                {
-                  "place": "Rio de Janeiro (GIG)",
-                  "arrival": "11:30",
-                  "departure": null,
-                  "role": "destination",
-                  "lat": -22.91,
-                  "lon": -43.17
-                }
-              ]
-            },
-            {
-              "id": "air-france-atlantique-ameriques-7",
-              "flightNo": "AF 504",
-              "line": "Atlantique Sud (Retour)",
-              "lineHeader": "Axe / Ligne",
-              "meta": [],
-              "origin": "Rio de Janeiro (GIG)",
+              "origin": "Paris (ORY)",
               "departure": "13:00",
-              "destination": "Paris (ORY)",
-              "arrival": "16:00 *",
-              "frequency": "Depuis Buenos Aires (corr. AF 503)",
+              "destination": "Buenos Aires (EZE)",
+              "arrival": "17:50 *",
+              "frequency": "Jeudi, Dimanche",
               "frequencyHeader": "Fréquence / Note",
               "stops": [
                 {
-                  "place": "Recife",
-                  "arrival": "17:30",
+                  "place": "Madrid",
+                  "arrival": "15:45",
                   "arrivalNextDay": false,
-                  "departure": "18:30",
+                  "departure": "16:45",
                   "departureNextDay": false
                 },
                 {
-                  "place": "Dakar (DKR)",
-                  "arrival": "03:00",
-                  "arrivalNextDay": true,
-                  "departure": "04:30",
+                  "place": "Dakar",
+                  "arrival": "23:20",
+                  "arrivalNextDay": false,
+                  "departure": "00:35",
                   "departureNextDay": true
                 },
                 {
-                  "place": "Casablanca",
-                  "arrival": "11:00",
+                  "place": "Rio de Janeiro (GIG)",
+                  "arrival": "09:00",
                   "arrivalNextDay": true,
-                  "departure": "12:15",
+                  "departure": "10:15",
+                  "departureNextDay": true
+                },
+                {
+                  "place": "São Paulo (CGH)",
+                  "arrival": "11:40",
+                  "arrivalNextDay": true,
+                  "departure": "12:25",
+                  "departureNextDay": true
+                },
+                {
+                  "place": "Montevideo",
+                  "arrival": "16:25",
+                  "arrivalNextDay": true,
+                  "departure": "16:55",
                   "departureNextDay": true
                 }
               ],
               "itinerary": [
                 {
-                  "place": "Rio de Janeiro (GIG)",
+                  "place": "Paris (ORY)",
                   "arrival": null,
                   "departure": "13:00",
                   "role": "origin",
-                  "lat": -22.91,
-                  "lon": -43.17
+                  "lat": 48.86,
+                  "lon": 2.35
                 },
                 {
-                  "place": "Recife",
-                  "arrival": "17:30",
+                  "place": "Madrid",
+                  "arrival": "15:45",
                   "arrivalNextDay": false,
-                  "departure": "18:30",
+                  "departure": "16:45",
                   "departureNextDay": false,
                   "role": "stop",
-                  "lat": -8.05,
-                  "lon": -34.88
+                  "lat": 40.42,
+                  "lon": -3.7
                 },
                 {
-                  "place": "Dakar (DKR)",
-                  "arrival": "03:00",
-                  "arrivalNextDay": true,
-                  "departure": "04:30",
+                  "place": "Dakar",
+                  "arrival": "23:20",
+                  "arrivalNextDay": false,
+                  "departure": "00:35",
                   "departureNextDay": true,
                   "role": "stop",
                   "lat": 14.72,
                   "lon": -17.47
                 },
                 {
-                  "place": "Casablanca",
-                  "arrival": "11:00",
+                  "place": "Rio de Janeiro (GIG)",
+                  "arrival": "09:00",
                   "arrivalNextDay": true,
-                  "departure": "12:15",
+                  "departure": "10:15",
                   "departureNextDay": true,
                   "role": "stop",
-                  "lat": 33.57,
-                  "lon": -7.59
+                  "lat": -22.91,
+                  "lon": -43.17
+                },
+                {
+                  "place": "São Paulo (CGH)",
+                  "arrival": "11:40",
+                  "arrivalNextDay": true,
+                  "departure": "12:25",
+                  "departureNextDay": true,
+                  "role": "stop",
+                  "lat": -23.55,
+                  "lon": -46.63
+                },
+                {
+                  "place": "Montevideo",
+                  "arrival": "16:25",
+                  "arrivalNextDay": true,
+                  "departure": "16:55",
+                  "departureNextDay": true,
+                  "role": "stop",
+                  "lat": -34.9,
+                  "lon": -56.19
+                },
+                {
+                  "place": "Buenos Aires (EZE)",
+                  "arrival": "17:50 *",
+                  "departure": null,
+                  "role": "destination",
+                  "lat": -34.61,
+                  "lon": -58.38
+                }
+              ]
+            },
+            {
+              "id": "air-france-atlantique-ameriques-7",
+              "flightNo": "AF 094",
+              "line": "Amérique du Sud (Retour)",
+              "lineHeader": "Axe / Ligne",
+              "meta": [],
+              "origin": "Buenos Aires (EZE)",
+              "departure": "09:00",
+              "destination": "Paris (ORY)",
+              "arrival": "14:45 *",
+              "frequency": "Lundi, Vendredi",
+              "frequencyHeader": "Fréquence / Note",
+              "stops": [
+                {
+                  "place": "Montevideo",
+                  "arrival": "09:55",
+                  "arrivalNextDay": false,
+                  "departure": "10:25",
+                  "departureNextDay": false
+                },
+                {
+                  "place": "São Paulo (CGH)",
+                  "arrival": "14:00",
+                  "arrivalNextDay": false,
+                  "departure": "14:45",
+                  "departureNextDay": false
+                },
+                {
+                  "place": "Rio de Janeiro (GIG)",
+                  "arrival": "16:00",
+                  "arrivalNextDay": false,
+                  "departure": "17:00",
+                  "departureNextDay": false
+                },
+                {
+                  "place": "Dakar",
+                  "arrival": "01:30",
+                  "arrivalNextDay": true,
+                  "departure": "02:45",
+                  "departureNextDay": true
+                },
+                {
+                  "place": "Madrid",
+                  "arrival": "11:30",
+                  "arrivalNextDay": true,
+                  "departure": "12:30",
+                  "departureNextDay": true
+                }
+              ],
+              "itinerary": [
+                {
+                  "place": "Buenos Aires (EZE)",
+                  "arrival": null,
+                  "departure": "09:00",
+                  "role": "origin",
+                  "lat": -34.61,
+                  "lon": -58.38
+                },
+                {
+                  "place": "Montevideo",
+                  "arrival": "09:55",
+                  "arrivalNextDay": false,
+                  "departure": "10:25",
+                  "departureNextDay": false,
+                  "role": "stop",
+                  "lat": -34.9,
+                  "lon": -56.19
+                },
+                {
+                  "place": "São Paulo (CGH)",
+                  "arrival": "14:00",
+                  "arrivalNextDay": false,
+                  "departure": "14:45",
+                  "departureNextDay": false,
+                  "role": "stop",
+                  "lat": -23.55,
+                  "lon": -46.63
+                },
+                {
+                  "place": "Rio de Janeiro (GIG)",
+                  "arrival": "16:00",
+                  "arrivalNextDay": false,
+                  "departure": "17:00",
+                  "departureNextDay": false,
+                  "role": "stop",
+                  "lat": -22.91,
+                  "lon": -43.17
+                },
+                {
+                  "place": "Dakar",
+                  "arrival": "01:30",
+                  "arrivalNextDay": true,
+                  "departure": "02:45",
+                  "departureNextDay": true,
+                  "role": "stop",
+                  "lat": 14.72,
+                  "lon": -17.47
+                },
+                {
+                  "place": "Madrid",
+                  "arrival": "11:30",
+                  "arrivalNextDay": true,
+                  "departure": "12:30",
+                  "departureNextDay": true,
+                  "role": "stop",
+                  "lat": 40.42,
+                  "lon": -3.7
                 },
                 {
                   "place": "Paris (ORY)",
-                  "arrival": "16:00 *",
+                  "arrival": "14:45 *",
                   "departure": null,
                   "role": "destination",
                   "lat": 48.86,
@@ -1657,126 +1655,142 @@
           ]
         },
         {
-          "id": "orient-afrique",
-          "name": "Orient & Afrique",
+          "id": "extreme-orient",
+          "name": "Extrême-Orient",
           "notes": [
-            "[S] Sourcé : Air France exploite le L-1049 vers l'Extrême-Orient (Tokyo, Saïgon/Indochine) et l'Afrique centrale ; corridors et escales conformes à l'époque.",
-            "[R] Reconstitué : numéros de vol et horaires exacts.",
-            "* Arrivée le lendemain (+1 jour). (Mer)/(Ven) = jour de circulation. [Tech] = escale technique.",
-            "[R] Vols retour ajoutés automatiquement (itinéraire miroir, horaires reconstitués)."
+            "[S] Sourcé : le service « Eastern Epicurean » (AF 170, Super Constellation) reliait Paris–Rome–Téhéran–Karachi–Bangkok–Saïgon–Manille–Tokyo, d'après l'indicateur officiel Air France (été 1956).",
+            "[R] Vol retour reconstitué (itinéraire miroir) ; horaires aller conformes à l'indicateur, retour plausible.",
+            "* / ** : arrivée à J+1 / J+2. HL : Heure Locale."
           ],
           "flights": [
             {
-              "id": "air-france-orient-afrique-0",
-              "flightNo": "AF 184",
-              "line": "Extrême-Orient (Le Tokyo)",
+              "id": "air-france-extreme-orient-0",
+              "flightNo": "AF 170",
+              "line": "Extrême-Orient (Eastern Epicurean)",
               "lineHeader": "Axe / Ligne",
               "meta": [],
               "origin": "Paris (ORY)",
-              "departure": "13:00 (Mer)",
+              "departure": "17:40",
               "destination": "Tokyo (HND)",
-              "arrival": "15:30 (Ven)",
-              "frequency": "Ligne du Cap au Japon",
-              "frequencyHeader": "Note",
+              "arrival": "22:15 **",
+              "frequency": "Mardi, Samedi",
+              "frequencyHeader": "Fréquence / Note",
               "stops": [
                 {
                   "place": "Rome",
-                  "arrival": "17:00",
+                  "arrival": "20:30",
                   "arrivalNextDay": false,
-                  "departure": "18:00",
+                  "departure": "21:50",
                   "departureNextDay": false
                 },
                 {
-                  "place": "Beyrouth",
-                  "arrival": "23:30",
-                  "arrivalNextDay": false,
-                  "departure": "00:45",
+                  "place": "Téhéran",
+                  "arrival": "08:30",
+                  "arrivalNextDay": true,
+                  "departure": "10:00",
                   "departureNextDay": true
                 },
                 {
                   "place": "Karachi",
-                  "arrival": "08:30",
-                  "arrivalNextDay": false,
-                  "departure": "09:45",
+                  "arrival": "16:00",
+                  "arrivalNextDay": true,
+                  "departure": "17:30",
                   "departureNextDay": true
                 },
                 {
-                  "place": "Calcutta",
-                  "arrival": "15:00",
-                  "arrivalNextDay": false,
-                  "departure": "16:15",
+                  "place": "Bangkok",
+                  "arrival": "03:50",
+                  "arrivalNextDay": true,
+                  "departure": "04:50",
                   "departureNextDay": true
                 },
                 {
                   "place": "Saïgon",
-                  "arrival": "23:30",
+                  "arrival": "06:40",
                   "arrivalNextDay": true,
-                  "departure": "01:00",
-                  "departureNextDay": false
+                  "departure": "08:10",
+                  "departureNextDay": true
+                },
+                {
+                  "place": "Manille",
+                  "arrival": "13:10",
+                  "arrivalNextDay": true,
+                  "departure": "14:10",
+                  "departureNextDay": true
                 }
               ],
               "itinerary": [
                 {
                   "place": "Paris (ORY)",
                   "arrival": null,
-                  "departure": "13:00 (Mer)",
+                  "departure": "17:40",
                   "role": "origin",
                   "lat": 48.86,
                   "lon": 2.35
                 },
                 {
                   "place": "Rome",
-                  "arrival": "17:00",
+                  "arrival": "20:30",
                   "arrivalNextDay": false,
-                  "departure": "18:00",
+                  "departure": "21:50",
                   "departureNextDay": false,
                   "role": "stop",
                   "lat": 41.9,
                   "lon": 12.5
                 },
                 {
-                  "place": "Beyrouth",
-                  "arrival": "23:30",
-                  "arrivalNextDay": false,
-                  "departure": "00:45",
+                  "place": "Téhéran",
+                  "arrival": "08:30",
+                  "arrivalNextDay": true,
+                  "departure": "10:00",
                   "departureNextDay": true,
                   "role": "stop",
-                  "lat": 33.89,
-                  "lon": 35.5
+                  "lat": 35.69,
+                  "lon": 51.39
                 },
                 {
                   "place": "Karachi",
-                  "arrival": "08:30",
-                  "arrivalNextDay": false,
-                  "departure": "09:45",
+                  "arrival": "16:00",
+                  "arrivalNextDay": true,
+                  "departure": "17:30",
                   "departureNextDay": true,
                   "role": "stop",
                   "lat": 24.86,
                   "lon": 67
                 },
                 {
-                  "place": "Calcutta",
-                  "arrival": "15:00",
-                  "arrivalNextDay": false,
-                  "departure": "16:15",
+                  "place": "Bangkok",
+                  "arrival": "03:50",
+                  "arrivalNextDay": true,
+                  "departure": "04:50",
                   "departureNextDay": true,
                   "role": "stop",
-                  "lat": 22.57,
-                  "lon": 88.36
+                  "lat": 13.75,
+                  "lon": 100.5
                 },
                 {
                   "place": "Saïgon",
-                  "arrival": "23:30",
+                  "arrival": "06:40",
                   "arrivalNextDay": true,
-                  "departure": "01:00",
-                  "departureNextDay": false,
+                  "departure": "08:10",
+                  "departureNextDay": true,
                   "role": "stop",
                   "lat": 10.82,
                   "lon": 106.63
                 },
                 {
+                  "place": "Manille",
+                  "arrival": "13:10",
+                  "arrivalNextDay": true,
+                  "departure": "14:10",
+                  "departureNextDay": true,
+                  "role": "stop",
+                  "lat": 14.6,
+                  "lon": 120.98
+                },
+                {
                   "place": "Tokyo (HND)",
-                  "arrival": "15:30 (Ven)",
+                  "arrival": "22:15 **",
                   "departure": null,
                   "role": "destination",
                   "lat": 35.68,
@@ -1785,51 +1799,58 @@
               ]
             },
             {
-              "id": "air-france-orient-afrique-1",
-              "flightNo": "AF 185",
-              "line": "Extrême-Orient (Le Tokyo) (Retour)",
+              "id": "air-france-extreme-orient-1",
+              "flightNo": "AF 171",
+              "line": "Extrême-Orient (Eastern Epicurean) (Retour)",
               "lineHeader": "Axe / Ligne",
               "meta": [],
               "origin": "Tokyo (HND)",
               "departure": "16:00",
               "destination": "Paris (ORY)",
-              "arrival": "18:30 **",
-              "frequency": "Ligne du Cap au Japon",
-              "frequencyHeader": "Note",
+              "arrival": "05:30 **",
+              "frequency": "Jeudi, Dimanche",
+              "frequencyHeader": "Fréquence / Note",
               "stops": [
                 {
+                  "place": "Manille",
+                  "arrival": "20:00",
+                  "arrivalNextDay": false,
+                  "departure": "21:00",
+                  "departureNextDay": false
+                },
+                {
                   "place": "Saïgon",
-                  "arrival": "06:30",
+                  "arrival": "01:15",
                   "arrivalNextDay": true,
-                  "departure": "08:00",
+                  "departure": "02:15",
                   "departureNextDay": true
                 },
                 {
-                  "place": "Calcutta",
-                  "arrival": "15:15",
+                  "place": "Bangkok",
+                  "arrival": "04:00",
                   "arrivalNextDay": true,
-                  "departure": "16:30",
+                  "departure": "05:00",
                   "departureNextDay": true
                 },
                 {
                   "place": "Karachi",
-                  "arrival": "21:45",
+                  "arrival": "12:00",
                   "arrivalNextDay": true,
-                  "departure": "23:00",
+                  "departure": "13:00",
                   "departureNextDay": true
                 },
                 {
-                  "place": "Beyrouth",
-                  "arrival": "06:45",
+                  "place": "Téhéran",
+                  "arrival": "18:00",
                   "arrivalNextDay": true,
-                  "departure": "08:00",
+                  "departure": "19:00",
                   "departureNextDay": true
                 },
                 {
                   "place": "Rome",
-                  "arrival": "13:30",
+                  "arrival": "01:30",
                   "arrivalNextDay": true,
-                  "departure": "14:30",
+                  "departure": "02:30",
                   "departureNextDay": true
                 }
               ],
@@ -1843,428 +1864,143 @@
                   "lon": 139.69
                 },
                 {
+                  "place": "Manille",
+                  "arrival": "20:00",
+                  "arrivalNextDay": false,
+                  "departure": "21:00",
+                  "departureNextDay": false,
+                  "role": "stop",
+                  "lat": 14.6,
+                  "lon": 120.98
+                },
+                {
                   "place": "Saïgon",
-                  "arrival": "06:30",
+                  "arrival": "01:15",
                   "arrivalNextDay": true,
-                  "departure": "08:00",
+                  "departure": "02:15",
                   "departureNextDay": true,
                   "role": "stop",
                   "lat": 10.82,
                   "lon": 106.63
                 },
                 {
-                  "place": "Calcutta",
+                  "place": "Bangkok",
+                  "arrival": "04:00",
+                  "arrivalNextDay": true,
+                  "departure": "05:00",
+                  "departureNextDay": true,
+                  "role": "stop",
+                  "lat": 13.75,
+                  "lon": 100.5
+                },
+                {
+                  "place": "Karachi",
+                  "arrival": "12:00",
+                  "arrivalNextDay": true,
+                  "departure": "13:00",
+                  "departureNextDay": true,
+                  "role": "stop",
+                  "lat": 24.86,
+                  "lon": 67
+                },
+                {
+                  "place": "Téhéran",
+                  "arrival": "18:00",
+                  "arrivalNextDay": true,
+                  "departure": "19:00",
+                  "departureNextDay": true,
+                  "role": "stop",
+                  "lat": 35.69,
+                  "lon": 51.39
+                },
+                {
+                  "place": "Rome",
+                  "arrival": "01:30",
+                  "arrivalNextDay": true,
+                  "departure": "02:30",
+                  "departureNextDay": true,
+                  "role": "stop",
+                  "lat": 41.9,
+                  "lon": 12.5
+                },
+                {
+                  "place": "Paris (ORY)",
+                  "arrival": "05:30 **",
+                  "departure": null,
+                  "role": "destination",
+                  "lat": 48.86,
+                  "lon": 2.35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "europe",
+          "name": "Europe",
+          "notes": [
+            "[S] Sourcé : le service « L'Épicurien » (AF 568, Super Constellation) reliait Paris (Orly, 12:00) à Londres (13:15), d'après l'indicateur officiel Air France (été 1956) ; vol court de prestige.",
+            "[R] Vol retour reconstitué (Londres–Paris) ; horaire aller conforme à l'indicateur Air France 1956.",
+            "HL : Heure Locale."
+          ],
+          "flights": [
+            {
+              "id": "air-france-europe-0",
+              "flightNo": "AF 568",
+              "line": "Europe (Épicurien)",
+              "lineHeader": "Axe / Ligne",
+              "meta": [],
+              "origin": "Paris (ORY)",
+              "departure": "12:00",
+              "destination": "Londres (LHR)",
+              "arrival": "13:15",
+              "frequency": "Quotidien",
+              "frequencyHeader": "Fréquence / Note",
+              "stops": [],
+              "itinerary": [
+                {
+                  "place": "Paris (ORY)",
+                  "arrival": null,
+                  "departure": "12:00",
+                  "role": "origin",
+                  "lat": 48.86,
+                  "lon": 2.35
+                },
+                {
+                  "place": "Londres (LHR)",
+                  "arrival": "13:15",
+                  "departure": null,
+                  "role": "destination",
+                  "lat": 51.51,
+                  "lon": -0.13
+                }
+              ]
+            },
+            {
+              "id": "air-france-europe-1",
+              "flightNo": "AF 569",
+              "line": "Europe (Épicurien) (Retour)",
+              "lineHeader": "Axe / Ligne",
+              "meta": [],
+              "origin": "Londres (LHR)",
+              "departure": "14:00",
+              "destination": "Paris (ORY)",
+              "arrival": "15:15",
+              "frequency": "Quotidien",
+              "frequencyHeader": "Fréquence / Note",
+              "stops": [],
+              "itinerary": [
+                {
+                  "place": "Londres (LHR)",
+                  "arrival": null,
+                  "departure": "14:00",
+                  "role": "origin",
+                  "lat": 51.51,
+                  "lon": -0.13
+                },
+                {
+                  "place": "Paris (ORY)",
                   "arrival": "15:15",
-                  "arrivalNextDay": true,
-                  "departure": "16:30",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 22.57,
-                  "lon": 88.36
-                },
-                {
-                  "place": "Karachi",
-                  "arrival": "21:45",
-                  "arrivalNextDay": true,
-                  "departure": "23:00",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 24.86,
-                  "lon": 67
-                },
-                {
-                  "place": "Beyrouth",
-                  "arrival": "06:45",
-                  "arrivalNextDay": true,
-                  "departure": "08:00",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 33.89,
-                  "lon": 35.5
-                },
-                {
-                  "place": "Rome",
-                  "arrival": "13:30",
-                  "arrivalNextDay": true,
-                  "departure": "14:30",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 41.9,
-                  "lon": 12.5
-                },
-                {
-                  "place": "Paris (ORY)",
-                  "arrival": "18:30 **",
-                  "departure": null,
-                  "role": "destination",
-                  "lat": 48.86,
-                  "lon": 2.35
-                }
-              ]
-            },
-            {
-              "id": "air-france-orient-afrique-2",
-              "flightNo": "AF 186",
-              "line": "Indochine (Saïgon)",
-              "lineHeader": "Axe / Ligne",
-              "meta": [],
-              "origin": "Paris (ORY)",
-              "departure": "14:00 (Mer)",
-              "destination": "Saïgon (SGN)",
-              "arrival": "01:30 (Ven)",
-              "frequency": "Courrier d’Indochine",
-              "frequencyHeader": "Note",
-              "stops": [
-                {
-                  "place": "Rome",
-                  "arrival": "18:00",
-                  "arrivalNextDay": false,
-                  "departure": "19:00",
-                  "departureNextDay": false
-                },
-                {
-                  "place": "Le Caire (CAI)",
-                  "arrival": "23:30",
-                  "arrivalNextDay": false,
-                  "departure": "00:45",
-                  "departureNextDay": true
-                },
-                {
-                  "place": "Karachi",
-                  "arrival": "08:00",
-                  "arrivalNextDay": false,
-                  "departure": "09:15",
-                  "departureNextDay": true
-                },
-                {
-                  "place": "Calcutta",
-                  "arrival": "14:30",
-                  "arrivalNextDay": false,
-                  "departure": "15:45",
-                  "departureNextDay": true
-                },
-                {
-                  "place": "Bangkok (BKK)",
-                  "arrival": "21:00",
-                  "arrivalNextDay": false,
-                  "departure": "22:15",
-                  "departureNextDay": true
-                }
-              ],
-              "itinerary": [
-                {
-                  "place": "Paris (ORY)",
-                  "arrival": null,
-                  "departure": "14:00 (Mer)",
-                  "role": "origin",
-                  "lat": 48.86,
-                  "lon": 2.35
-                },
-                {
-                  "place": "Rome",
-                  "arrival": "18:00",
-                  "arrivalNextDay": false,
-                  "departure": "19:00",
-                  "departureNextDay": false,
-                  "role": "stop",
-                  "lat": 41.9,
-                  "lon": 12.5
-                },
-                {
-                  "place": "Le Caire (CAI)",
-                  "arrival": "23:30",
-                  "arrivalNextDay": false,
-                  "departure": "00:45",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 30.04,
-                  "lon": 31.24
-                },
-                {
-                  "place": "Karachi",
-                  "arrival": "08:00",
-                  "arrivalNextDay": false,
-                  "departure": "09:15",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 24.86,
-                  "lon": 67
-                },
-                {
-                  "place": "Calcutta",
-                  "arrival": "14:30",
-                  "arrivalNextDay": false,
-                  "departure": "15:45",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 22.57,
-                  "lon": 88.36
-                },
-                {
-                  "place": "Bangkok (BKK)",
-                  "arrival": "21:00",
-                  "arrivalNextDay": false,
-                  "departure": "22:15",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 13.75,
-                  "lon": 100.5
-                },
-                {
-                  "place": "Saïgon (SGN)",
-                  "arrival": "01:30 (Ven)",
-                  "departure": null,
-                  "role": "destination",
-                  "lat": 10.82,
-                  "lon": 106.63
-                }
-              ]
-            },
-            {
-              "id": "air-france-orient-afrique-3",
-              "flightNo": "AF 187",
-              "line": "Indochine (Saïgon) (Retour)",
-              "lineHeader": "Axe / Ligne",
-              "meta": [],
-              "origin": "Saïgon (SGN)",
-              "departure": "16:00",
-              "destination": "Paris (ORY)",
-              "arrival": "03:30 **",
-              "frequency": "Courrier d’Indochine",
-              "frequencyHeader": "Note",
-              "stops": [
-                {
-                  "place": "Bangkok (BKK)",
-                  "arrival": "19:15",
-                  "arrivalNextDay": false,
-                  "departure": "20:30",
-                  "departureNextDay": false
-                },
-                {
-                  "place": "Calcutta",
-                  "arrival": "01:45",
-                  "arrivalNextDay": true,
-                  "departure": "03:00",
-                  "departureNextDay": true
-                },
-                {
-                  "place": "Karachi",
-                  "arrival": "08:15",
-                  "arrivalNextDay": true,
-                  "departure": "09:30",
-                  "departureNextDay": true
-                },
-                {
-                  "place": "Le Caire (CAI)",
-                  "arrival": "16:45",
-                  "arrivalNextDay": true,
-                  "departure": "18:00",
-                  "departureNextDay": true
-                },
-                {
-                  "place": "Rome",
-                  "arrival": "22:30",
-                  "arrivalNextDay": true,
-                  "departure": "23:30",
-                  "departureNextDay": true
-                }
-              ],
-              "itinerary": [
-                {
-                  "place": "Saïgon (SGN)",
-                  "arrival": null,
-                  "departure": "16:00",
-                  "role": "origin",
-                  "lat": 10.82,
-                  "lon": 106.63
-                },
-                {
-                  "place": "Bangkok (BKK)",
-                  "arrival": "19:15",
-                  "arrivalNextDay": false,
-                  "departure": "20:30",
-                  "departureNextDay": false,
-                  "role": "stop",
-                  "lat": 13.75,
-                  "lon": 100.5
-                },
-                {
-                  "place": "Calcutta",
-                  "arrival": "01:45",
-                  "arrivalNextDay": true,
-                  "departure": "03:00",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 22.57,
-                  "lon": 88.36
-                },
-                {
-                  "place": "Karachi",
-                  "arrival": "08:15",
-                  "arrivalNextDay": true,
-                  "departure": "09:30",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 24.86,
-                  "lon": 67
-                },
-                {
-                  "place": "Le Caire (CAI)",
-                  "arrival": "16:45",
-                  "arrivalNextDay": true,
-                  "departure": "18:00",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 30.04,
-                  "lon": 31.24
-                },
-                {
-                  "place": "Rome",
-                  "arrival": "22:30",
-                  "arrivalNextDay": true,
-                  "departure": "23:30",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 41.9,
-                  "lon": 12.5
-                },
-                {
-                  "place": "Paris (ORY)",
-                  "arrival": "03:30 **",
-                  "departure": null,
-                  "role": "destination",
-                  "lat": 48.86,
-                  "lon": 2.35
-                }
-              ]
-            },
-            {
-              "id": "air-france-orient-afrique-4",
-              "flightNo": "AF 405",
-              "line": "Afrique Centrale",
-              "lineHeader": "Axe / Ligne",
-              "meta": [],
-              "origin": "Paris (ORY)",
-              "departure": "22:30",
-              "destination": "Brazzaville (BZV)",
-              "arrival": "16:45 *",
-              "frequency": "Axe transsaharien",
-              "frequencyHeader": "Note",
-              "stops": [
-                {
-                  "place": "Alger",
-                  "arrival": "01:45",
-                  "arrivalNextDay": false,
-                  "departure": "02:45",
-                  "departureNextDay": true
-                },
-                {
-                  "place": "Kano [Tech]",
-                  "arrival": "10:15",
-                  "arrivalNextDay": false,
-                  "departure": "11:30",
-                  "departureNextDay": true
-                }
-              ],
-              "itinerary": [
-                {
-                  "place": "Paris (ORY)",
-                  "arrival": null,
-                  "departure": "22:30",
-                  "role": "origin",
-                  "lat": 48.86,
-                  "lon": 2.35
-                },
-                {
-                  "place": "Alger",
-                  "arrival": "01:45",
-                  "arrivalNextDay": false,
-                  "departure": "02:45",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 36.75,
-                  "lon": 3.06
-                },
-                {
-                  "place": "Kano [Tech]",
-                  "arrival": "10:15",
-                  "arrivalNextDay": false,
-                  "departure": "11:30",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 12,
-                  "lon": 8.52
-                },
-                {
-                  "place": "Brazzaville (BZV)",
-                  "arrival": "16:45 *",
-                  "departure": null,
-                  "role": "destination",
-                  "lat": -4.26,
-                  "lon": 15.28
-                }
-              ]
-            },
-            {
-              "id": "air-france-orient-afrique-5",
-              "flightNo": "AF 406",
-              "line": "Afrique Centrale (Retour)",
-              "lineHeader": "Axe / Ligne",
-              "meta": [],
-              "origin": "Brazzaville (BZV)",
-              "departure": "16:00",
-              "destination": "Paris (ORY)",
-              "arrival": "10:15 *",
-              "frequency": "Axe transsaharien",
-              "frequencyHeader": "Note",
-              "stops": [
-                {
-                  "place": "Kano [Tech]",
-                  "arrival": "21:15",
-                  "arrivalNextDay": false,
-                  "departure": "22:30",
-                  "departureNextDay": false
-                },
-                {
-                  "place": "Alger",
-                  "arrival": "06:00",
-                  "arrivalNextDay": true,
-                  "departure": "07:00",
-                  "departureNextDay": true
-                }
-              ],
-              "itinerary": [
-                {
-                  "place": "Brazzaville (BZV)",
-                  "arrival": null,
-                  "departure": "16:00",
-                  "role": "origin",
-                  "lat": -4.26,
-                  "lon": 15.28
-                },
-                {
-                  "place": "Kano [Tech]",
-                  "arrival": "21:15",
-                  "arrivalNextDay": false,
-                  "departure": "22:30",
-                  "departureNextDay": false,
-                  "role": "stop",
-                  "lat": 12,
-                  "lon": 8.52
-                },
-                {
-                  "place": "Alger",
-                  "arrival": "06:00",
-                  "arrivalNextDay": true,
-                  "departure": "07:00",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 36.75,
-                  "lon": 3.06
-                },
-                {
-                  "place": "Paris (ORY)",
-                  "arrival": "10:15 *",
                   "departure": null,
                   "role": "destination",
                   "lat": 48.86,
@@ -16619,73 +16355,36 @@
           "name": "Atlantic & Americas",
           "notes": [
             "Sources: Air France received its first L-1049C (F-BGNJ) on 2 Nov. 1953, entering service on 15 Nov. 1953; 24 'Super Connies' (10× 1049C + 14× 1049G), the second-largest operator worldwide after TWA.",
-            "[S] Sourced: axes actually opened with the L-1049C from 1953 — Paris–New York, Paris–Buenos Aires, Pointe-à-Pitre, Caracas, Tokyo; Gander/Shannon technical stops.",
-            "[R] Reconstructed: flight numbers and schedules — plausible but not taken from an original timetable.",
-            "* Arrival next day (+1 day). LT: Local Time. [Tech] = technical stop.",
-            "[R] Return flights added automatically (mirror itinerary, reconstructed schedules).",
-            "[R] AF 503/504: complete reverse South Atlantic service (Buenos Aires → Rio → Recife → Dakar → Casablanca → Paris), reconstructed."
+            "[S] Sourced: network and schedules from the official Air France timetable (summer 1956) — 'Parisien Spécial' (Paris–New York), extensions to Mexico City (via New York or via Boston) and South America (AF 093) Paris–Madrid–Dakar–Rio–São Paulo–Montevideo–Buenos Aires.",
+            "[R] Return flights reconstructed (mirror itinerary): OUTBOUND times per the 1956 Air France timetable, RETURN times plausible.",
+            "* Arrival next day (+1 day). LT: Local Time. [Tech] = technical stop."
           ],
           "flights": [
             {
               "id": "air-france-atlantique-ameriques-0",
-              "flightNo": "AF 017",
-              "line": "North Atlantic (Le Parisien)",
+              "flightNo": "AF 045",
+              "line": "North Atlantic (Parisien Spécial)",
               "lineHeader": "Axis / Line",
               "meta": [],
               "origin": "Paris (ORY)",
-              "departure": "20:00",
+              "departure": "23:00",
               "destination": "New York (IDL)",
-              "arrival": "10:15 *",
-              "frequency": "Prestige line (night)",
+              "arrival": "08:40 *",
+              "frequency": "Daily",
               "frequencyHeader": "Frequency / Note",
-              "stops": [
-                {
-                  "place": "Shannon",
-                  "arrival": "22:45",
-                  "arrivalNextDay": false,
-                  "departure": "23:45",
-                  "departureNextDay": false
-                },
-                {
-                  "place": "Gander [Tech]",
-                  "arrival": "05:30",
-                  "arrivalNextDay": false,
-                  "departure": "06:45",
-                  "departureNextDay": true
-                }
-              ],
+              "stops": [],
               "itinerary": [
                 {
                   "place": "Paris (ORY)",
                   "arrival": null,
-                  "departure": "20:00",
+                  "departure": "23:00",
                   "role": "origin",
                   "lat": 48.86,
                   "lon": 2.35
                 },
                 {
-                  "place": "Shannon",
-                  "arrival": "22:45",
-                  "arrivalNextDay": false,
-                  "departure": "23:45",
-                  "departureNextDay": false,
-                  "role": "stop",
-                  "lat": 52.7,
-                  "lon": -8.92
-                },
-                {
-                  "place": "Gander [Tech]",
-                  "arrival": "05:30",
-                  "arrivalNextDay": false,
-                  "departure": "06:45",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 48.95,
-                  "lon": -54.61
-                },
-                {
                   "place": "New York (IDL)",
-                  "arrival": "10:15 *",
+                  "arrival": "08:40 *",
                   "departure": null,
                   "role": "destination",
                   "lat": 40.71,
@@ -16695,64 +16394,29 @@
             },
             {
               "id": "air-france-atlantique-ameriques-1",
-              "flightNo": "AF 018",
-              "line": "North Atlantic (Return)",
+              "flightNo": "AF 046",
+              "line": "North Atlantic (Parisien Spécial) (Return)",
               "lineHeader": "Axis / Line",
               "meta": [],
               "origin": "New York (IDL)",
-              "departure": "16:30",
+              "departure": "19:00",
               "destination": "Paris (ORY)",
-              "arrival": "11:45 *",
-              "frequency": "Night flight",
+              "arrival": "08:00 *",
+              "frequency": "Daily",
               "frequencyHeader": "Frequency / Note",
-              "stops": [
-                {
-                  "place": "Gander [Tech]",
-                  "arrival": "21:45",
-                  "arrivalNextDay": false,
-                  "departure": "22:45",
-                  "departureNextDay": false
-                },
-                {
-                  "place": "Shannon",
-                  "arrival": "07:30",
-                  "arrivalNextDay": false,
-                  "departure": "08:30",
-                  "departureNextDay": true
-                }
-              ],
+              "stops": [],
               "itinerary": [
                 {
                   "place": "New York (IDL)",
                   "arrival": null,
-                  "departure": "16:30",
+                  "departure": "19:00",
                   "role": "origin",
                   "lat": 40.71,
                   "lon": -74.01
                 },
                 {
-                  "place": "Gander [Tech]",
-                  "arrival": "21:45",
-                  "arrivalNextDay": false,
-                  "departure": "22:45",
-                  "departureNextDay": false,
-                  "role": "stop",
-                  "lat": 48.95,
-                  "lon": -54.61
-                },
-                {
-                  "place": "Shannon",
-                  "arrival": "07:30",
-                  "arrivalNextDay": false,
-                  "departure": "08:30",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 52.7,
-                  "lon": -8.92
-                },
-                {
                   "place": "Paris (ORY)",
-                  "arrival": "11:45 *",
+                  "arrival": "08:00 *",
                   "departure": null,
                   "role": "destination",
                   "lat": 48.86,
@@ -16762,36 +16426,29 @@
             },
             {
               "id": "air-france-atlantique-ameriques-2",
-              "flightNo": "AF 211",
-              "line": "West Indies & Central America",
+              "flightNo": "AF 079",
+              "line": "North Atlantic (Mexico City via Boston)",
               "lineHeader": "Axis / Line",
               "meta": [],
               "origin": "Paris (ORY)",
-              "departure": "10:00",
-              "destination": "Bogota (BOG)",
-              "arrival": "08:15 *",
-              "frequency": "West Indies route",
+              "departure": "22:00",
+              "destination": "Mexico City (MEX)",
+              "arrival": "17:55 *",
+              "frequency": "Tuesday, Thursday, Saturday",
               "frequencyHeader": "Frequency / Note",
               "stops": [
                 {
-                  "place": "Santa Maria",
-                  "arrival": "15:00",
-                  "arrivalNextDay": false,
-                  "departure": "16:15",
-                  "departureNextDay": false
-                },
-                {
-                  "place": "Pointe-à-Pitre",
-                  "arrival": "00:30",
-                  "arrivalNextDay": false,
-                  "departure": "02:00",
+                  "place": "Boston (BOS)",
+                  "arrival": "08:40",
+                  "arrivalNextDay": true,
+                  "departure": "09:20",
                   "departureNextDay": true
                 },
                 {
-                  "place": "Caracas",
-                  "arrival": "05:00",
-                  "arrivalNextDay": false,
-                  "departure": "06:15",
+                  "place": "New York (IDL)",
+                  "arrival": "10:30",
+                  "arrivalNextDay": true,
+                  "departure": "12:00",
                   "departureNextDay": true
                 }
               ],
@@ -16799,128 +16456,101 @@
                 {
                   "place": "Paris (ORY)",
                   "arrival": null,
-                  "departure": "10:00",
+                  "departure": "22:00",
                   "role": "origin",
                   "lat": 48.86,
                   "lon": 2.35
                 },
                 {
-                  "place": "Santa Maria",
-                  "arrival": "15:00",
-                  "arrivalNextDay": false,
-                  "departure": "16:15",
-                  "departureNextDay": false,
-                  "role": "stop",
-                  "lat": 36.97,
-                  "lon": -25.1
-                },
-                {
-                  "place": "Pointe-à-Pitre",
-                  "arrival": "00:30",
-                  "arrivalNextDay": false,
-                  "departure": "02:00",
+                  "place": "Boston (BOS)",
+                  "arrival": "08:40",
+                  "arrivalNextDay": true,
+                  "departure": "09:20",
                   "departureNextDay": true,
                   "role": "stop",
-                  "lat": 16.24,
-                  "lon": -61.53
+                  "lat": 42.36,
+                  "lon": -71.06
                 },
                 {
-                  "place": "Caracas",
-                  "arrival": "05:00",
-                  "arrivalNextDay": false,
-                  "departure": "06:15",
+                  "place": "New York (IDL)",
+                  "arrival": "10:30",
+                  "arrivalNextDay": true,
+                  "departure": "12:00",
                   "departureNextDay": true,
                   "role": "stop",
-                  "lat": 10.48,
-                  "lon": -66.9
+                  "lat": 40.71,
+                  "lon": -74.01
                 },
                 {
-                  "place": "Bogota (BOG)",
-                  "arrival": "08:15 *",
+                  "place": "Mexico City (MEX)",
+                  "arrival": "17:55 *",
                   "departure": null,
                   "role": "destination",
-                  "lat": 4.71,
-                  "lon": -74.07
+                  "lat": 19.43,
+                  "lon": -99.13
                 }
               ]
             },
             {
               "id": "air-france-atlantique-ameriques-3",
-              "flightNo": "AF 212",
-              "line": "West Indies & Central America (Return)",
+              "flightNo": "AF 080",
+              "line": "North Atlantic (Mexico City via Boston) (Return)",
               "lineHeader": "Axis / Line",
               "meta": [],
-              "origin": "Bogota (BOG)",
-              "departure": "16:00",
+              "origin": "Mexico City (MEX)",
+              "departure": "08:00",
               "destination": "Paris (ORY)",
-              "arrival": "14:15 *",
-              "frequency": "West Indies route",
+              "arrival": "06:30 *",
+              "frequency": "Wednesday, Friday, Sunday",
               "frequencyHeader": "Frequency / Note",
               "stops": [
                 {
-                  "place": "Caracas",
-                  "arrival": "18:00",
+                  "place": "New York (IDL)",
+                  "arrival": "13:35",
                   "arrivalNextDay": false,
-                  "departure": "19:15",
+                  "departure": "15:00",
                   "departureNextDay": false
                 },
                 {
-                  "place": "Pointe-à-Pitre",
-                  "arrival": "22:15",
+                  "place": "Boston (BOS)",
+                  "arrival": "16:00",
                   "arrivalNextDay": false,
-                  "departure": "23:45",
+                  "departure": "17:00",
                   "departureNextDay": false
-                },
-                {
-                  "place": "Santa Maria",
-                  "arrival": "08:00",
-                  "arrivalNextDay": true,
-                  "departure": "09:15",
-                  "departureNextDay": true
                 }
               ],
               "itinerary": [
                 {
-                  "place": "Bogota (BOG)",
+                  "place": "Mexico City (MEX)",
                   "arrival": null,
-                  "departure": "16:00",
+                  "departure": "08:00",
                   "role": "origin",
-                  "lat": 4.71,
-                  "lon": -74.07
+                  "lat": 19.43,
+                  "lon": -99.13
                 },
                 {
-                  "place": "Caracas",
-                  "arrival": "18:00",
+                  "place": "New York (IDL)",
+                  "arrival": "13:35",
                   "arrivalNextDay": false,
-                  "departure": "19:15",
+                  "departure": "15:00",
                   "departureNextDay": false,
                   "role": "stop",
-                  "lat": 10.48,
-                  "lon": -66.9
+                  "lat": 40.71,
+                  "lon": -74.01
                 },
                 {
-                  "place": "Pointe-à-Pitre",
-                  "arrival": "22:15",
+                  "place": "Boston (BOS)",
+                  "arrival": "16:00",
                   "arrivalNextDay": false,
-                  "departure": "23:45",
+                  "departure": "17:00",
                   "departureNextDay": false,
                   "role": "stop",
-                  "lat": 16.24,
-                  "lon": -61.53
-                },
-                {
-                  "place": "Santa Maria",
-                  "arrival": "08:00",
-                  "arrivalNextDay": true,
-                  "departure": "09:15",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 36.97,
-                  "lon": -25.1
+                  "lat": 42.36,
+                  "lon": -71.06
                 },
                 {
                   "place": "Paris (ORY)",
-                  "arrival": "14:15 *",
+                  "arrival": "06:30 *",
                   "departure": null,
                   "role": "destination",
                   "lat": 48.86,
@@ -16930,36 +16560,22 @@
             },
             {
               "id": "air-france-atlantique-ameriques-4",
-              "flightNo": "AF 501",
-              "line": "South Atlantic",
+              "flightNo": "AF 071",
+              "line": "North Atlantic (Mexico City)",
               "lineHeader": "Axis / Line",
               "meta": [],
               "origin": "Paris (ORY)",
-              "departure": "18:30",
-              "destination": "Rio de Janeiro (GIG)",
-              "arrival": "21:30 *",
-              "frequency": "Extended to Buenos Aires",
+              "departure": "22:00",
+              "destination": "Mexico City (MEX)",
+              "arrival": "17:55 *",
+              "frequency": "Daily",
               "frequencyHeader": "Frequency / Note",
               "stops": [
                 {
-                  "place": "Casablanca",
-                  "arrival": "22:15",
-                  "arrivalNextDay": false,
-                  "departure": "23:30",
-                  "departureNextDay": false
-                },
-                {
-                  "place": "Dakar",
-                  "arrival": "06:00",
-                  "arrivalNextDay": false,
-                  "departure": "07:30",
-                  "departureNextDay": true
-                },
-                {
-                  "place": "Recife",
-                  "arrival": "16:00",
-                  "arrivalNextDay": false,
-                  "departure": "17:00",
+                  "place": "New York (IDL)",
+                  "arrival": "09:20",
+                  "arrivalNextDay": true,
+                  "departure": "12:00",
                   "departureNextDay": true
                 }
               ],
@@ -16967,192 +16583,310 @@
                 {
                   "place": "Paris (ORY)",
                   "arrival": null,
-                  "departure": "18:30",
+                  "departure": "22:00",
                   "role": "origin",
                   "lat": 48.86,
                   "lon": 2.35
                 },
                 {
-                  "place": "Casablanca",
-                  "arrival": "22:15",
-                  "arrivalNextDay": false,
-                  "departure": "23:30",
-                  "departureNextDay": false,
-                  "role": "stop",
-                  "lat": 33.57,
-                  "lon": -7.59
-                },
-                {
-                  "place": "Dakar",
-                  "arrival": "06:00",
-                  "arrivalNextDay": false,
-                  "departure": "07:30",
+                  "place": "New York (IDL)",
+                  "arrival": "09:20",
+                  "arrivalNextDay": true,
+                  "departure": "12:00",
                   "departureNextDay": true,
                   "role": "stop",
-                  "lat": 14.72,
-                  "lon": -17.47
+                  "lat": 40.71,
+                  "lon": -74.01
                 },
                 {
-                  "place": "Recife",
-                  "arrival": "16:00",
-                  "arrivalNextDay": false,
-                  "departure": "17:00",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": -8.05,
-                  "lon": -34.88
-                },
-                {
-                  "place": "Rio de Janeiro (GIG)",
-                  "arrival": "21:30 *",
+                  "place": "Mexico City (MEX)",
+                  "arrival": "17:55 *",
                   "departure": null,
                   "role": "destination",
-                  "lat": -22.91,
-                  "lon": -43.17
+                  "lat": 19.43,
+                  "lon": -99.13
                 }
               ]
             },
             {
               "id": "air-france-atlantique-ameriques-5",
-              "flightNo": "AF 502",
-              "line": "South Atlantic (Final leg)",
+              "flightNo": "AF 072",
+              "line": "North Atlantic (Mexico City) (Return)",
               "lineHeader": "Axis / Line",
               "meta": [],
-              "origin": "Rio de Janeiro (GIG)",
-              "departure": "08:00",
-              "destination": "Buenos Aires (EZE)",
-              "arrival": "11:30",
-              "frequency": "Connection with AF 501",
+              "origin": "Mexico City (MEX)",
+              "departure": "09:00",
+              "destination": "Paris (ORY)",
+              "arrival": "06:00 *",
+              "frequency": "Daily",
               "frequencyHeader": "Frequency / Note",
-              "stops": [],
+              "stops": [
+                {
+                  "place": "New York (IDL)",
+                  "arrival": "14:35",
+                  "arrivalNextDay": false,
+                  "departure": "16:30",
+                  "departureNextDay": false
+                }
+              ],
               "itinerary": [
                 {
-                  "place": "Rio de Janeiro (GIG)",
+                  "place": "Mexico City (MEX)",
                   "arrival": null,
-                  "departure": "08:00",
+                  "departure": "09:00",
                   "role": "origin",
-                  "lat": -22.91,
-                  "lon": -43.17
+                  "lat": 19.43,
+                  "lon": -99.13
                 },
                 {
-                  "place": "Buenos Aires (EZE)",
-                  "arrival": "11:30",
+                  "place": "New York (IDL)",
+                  "arrival": "14:35",
+                  "arrivalNextDay": false,
+                  "departure": "16:30",
+                  "departureNextDay": false,
+                  "role": "stop",
+                  "lat": 40.71,
+                  "lon": -74.01
+                },
+                {
+                  "place": "Paris (ORY)",
+                  "arrival": "06:00 *",
                   "departure": null,
                   "role": "destination",
-                  "lat": -34.61,
-                  "lon": -58.38
+                  "lat": 48.86,
+                  "lon": 2.35
                 }
               ]
             },
             {
               "id": "air-france-atlantique-ameriques-6",
-              "flightNo": "AF 503",
-              "line": "South Atlantic (Return)",
+              "flightNo": "AF 093",
+              "line": "South America",
               "lineHeader": "Axis / Line",
               "meta": [],
-              "origin": "Buenos Aires (EZE)",
-              "departure": "08:00",
-              "destination": "Rio de Janeiro (GIG)",
-              "arrival": "11:30",
-              "frequency": "Initial leg (conn. AF 504)",
-              "frequencyHeader": "Frequency / Note",
-              "stops": [],
-              "itinerary": [
-                {
-                  "place": "Buenos Aires (EZE)",
-                  "arrival": null,
-                  "departure": "08:00",
-                  "role": "origin",
-                  "lat": -34.61,
-                  "lon": -58.38
-                },
-                {
-                  "place": "Rio de Janeiro (GIG)",
-                  "arrival": "11:30",
-                  "departure": null,
-                  "role": "destination",
-                  "lat": -22.91,
-                  "lon": -43.17
-                }
-              ]
-            },
-            {
-              "id": "air-france-atlantique-ameriques-7",
-              "flightNo": "AF 504",
-              "line": "South Atlantic (Return)",
-              "lineHeader": "Axis / Line",
-              "meta": [],
-              "origin": "Rio de Janeiro (GIG)",
+              "origin": "Paris (ORY)",
               "departure": "13:00",
-              "destination": "Paris (ORY)",
-              "arrival": "16:00 *",
-              "frequency": "From Buenos Aires (conn. AF 503)",
+              "destination": "Buenos Aires (EZE)",
+              "arrival": "17:50 *",
+              "frequency": "Thursday, Sunday",
               "frequencyHeader": "Frequency / Note",
               "stops": [
                 {
-                  "place": "Recife",
-                  "arrival": "17:30",
+                  "place": "Madrid",
+                  "arrival": "15:45",
                   "arrivalNextDay": false,
-                  "departure": "18:30",
+                  "departure": "16:45",
                   "departureNextDay": false
                 },
                 {
-                  "place": "Dakar (DKR)",
-                  "arrival": "03:00",
-                  "arrivalNextDay": true,
-                  "departure": "04:30",
+                  "place": "Dakar",
+                  "arrival": "23:20",
+                  "arrivalNextDay": false,
+                  "departure": "00:35",
                   "departureNextDay": true
                 },
                 {
-                  "place": "Casablanca",
-                  "arrival": "11:00",
+                  "place": "Rio de Janeiro (GIG)",
+                  "arrival": "09:00",
                   "arrivalNextDay": true,
-                  "departure": "12:15",
+                  "departure": "10:15",
+                  "departureNextDay": true
+                },
+                {
+                  "place": "São Paulo (CGH)",
+                  "arrival": "11:40",
+                  "arrivalNextDay": true,
+                  "departure": "12:25",
+                  "departureNextDay": true
+                },
+                {
+                  "place": "Montevideo",
+                  "arrival": "16:25",
+                  "arrivalNextDay": true,
+                  "departure": "16:55",
                   "departureNextDay": true
                 }
               ],
               "itinerary": [
                 {
-                  "place": "Rio de Janeiro (GIG)",
+                  "place": "Paris (ORY)",
                   "arrival": null,
                   "departure": "13:00",
                   "role": "origin",
-                  "lat": -22.91,
-                  "lon": -43.17
+                  "lat": 48.86,
+                  "lon": 2.35
                 },
                 {
-                  "place": "Recife",
-                  "arrival": "17:30",
+                  "place": "Madrid",
+                  "arrival": "15:45",
                   "arrivalNextDay": false,
-                  "departure": "18:30",
+                  "departure": "16:45",
                   "departureNextDay": false,
                   "role": "stop",
-                  "lat": -8.05,
-                  "lon": -34.88
+                  "lat": 40.42,
+                  "lon": -3.7
                 },
                 {
-                  "place": "Dakar (DKR)",
-                  "arrival": "03:00",
-                  "arrivalNextDay": true,
-                  "departure": "04:30",
+                  "place": "Dakar",
+                  "arrival": "23:20",
+                  "arrivalNextDay": false,
+                  "departure": "00:35",
                   "departureNextDay": true,
                   "role": "stop",
                   "lat": 14.72,
                   "lon": -17.47
                 },
                 {
-                  "place": "Casablanca",
-                  "arrival": "11:00",
+                  "place": "Rio de Janeiro (GIG)",
+                  "arrival": "09:00",
                   "arrivalNextDay": true,
-                  "departure": "12:15",
+                  "departure": "10:15",
                   "departureNextDay": true,
                   "role": "stop",
-                  "lat": 33.57,
-                  "lon": -7.59
+                  "lat": -22.91,
+                  "lon": -43.17
+                },
+                {
+                  "place": "São Paulo (CGH)",
+                  "arrival": "11:40",
+                  "arrivalNextDay": true,
+                  "departure": "12:25",
+                  "departureNextDay": true,
+                  "role": "stop",
+                  "lat": -23.55,
+                  "lon": -46.63
+                },
+                {
+                  "place": "Montevideo",
+                  "arrival": "16:25",
+                  "arrivalNextDay": true,
+                  "departure": "16:55",
+                  "departureNextDay": true,
+                  "role": "stop",
+                  "lat": -34.9,
+                  "lon": -56.19
+                },
+                {
+                  "place": "Buenos Aires (EZE)",
+                  "arrival": "17:50 *",
+                  "departure": null,
+                  "role": "destination",
+                  "lat": -34.61,
+                  "lon": -58.38
+                }
+              ]
+            },
+            {
+              "id": "air-france-atlantique-ameriques-7",
+              "flightNo": "AF 094",
+              "line": "South America (Return)",
+              "lineHeader": "Axis / Line",
+              "meta": [],
+              "origin": "Buenos Aires (EZE)",
+              "departure": "09:00",
+              "destination": "Paris (ORY)",
+              "arrival": "14:45 *",
+              "frequency": "Monday, Friday",
+              "frequencyHeader": "Frequency / Note",
+              "stops": [
+                {
+                  "place": "Montevideo",
+                  "arrival": "09:55",
+                  "arrivalNextDay": false,
+                  "departure": "10:25",
+                  "departureNextDay": false
+                },
+                {
+                  "place": "São Paulo (CGH)",
+                  "arrival": "14:00",
+                  "arrivalNextDay": false,
+                  "departure": "14:45",
+                  "departureNextDay": false
+                },
+                {
+                  "place": "Rio de Janeiro (GIG)",
+                  "arrival": "16:00",
+                  "arrivalNextDay": false,
+                  "departure": "17:00",
+                  "departureNextDay": false
+                },
+                {
+                  "place": "Dakar",
+                  "arrival": "01:30",
+                  "arrivalNextDay": true,
+                  "departure": "02:45",
+                  "departureNextDay": true
+                },
+                {
+                  "place": "Madrid",
+                  "arrival": "11:30",
+                  "arrivalNextDay": true,
+                  "departure": "12:30",
+                  "departureNextDay": true
+                }
+              ],
+              "itinerary": [
+                {
+                  "place": "Buenos Aires (EZE)",
+                  "arrival": null,
+                  "departure": "09:00",
+                  "role": "origin",
+                  "lat": -34.61,
+                  "lon": -58.38
+                },
+                {
+                  "place": "Montevideo",
+                  "arrival": "09:55",
+                  "arrivalNextDay": false,
+                  "departure": "10:25",
+                  "departureNextDay": false,
+                  "role": "stop",
+                  "lat": -34.9,
+                  "lon": -56.19
+                },
+                {
+                  "place": "São Paulo (CGH)",
+                  "arrival": "14:00",
+                  "arrivalNextDay": false,
+                  "departure": "14:45",
+                  "departureNextDay": false,
+                  "role": "stop",
+                  "lat": -23.55,
+                  "lon": -46.63
+                },
+                {
+                  "place": "Rio de Janeiro (GIG)",
+                  "arrival": "16:00",
+                  "arrivalNextDay": false,
+                  "departure": "17:00",
+                  "departureNextDay": false,
+                  "role": "stop",
+                  "lat": -22.91,
+                  "lon": -43.17
+                },
+                {
+                  "place": "Dakar",
+                  "arrival": "01:30",
+                  "arrivalNextDay": true,
+                  "departure": "02:45",
+                  "departureNextDay": true,
+                  "role": "stop",
+                  "lat": 14.72,
+                  "lon": -17.47
+                },
+                {
+                  "place": "Madrid",
+                  "arrival": "11:30",
+                  "arrivalNextDay": true,
+                  "departure": "12:30",
+                  "departureNextDay": true,
+                  "role": "stop",
+                  "lat": 40.42,
+                  "lon": -3.7
                 },
                 {
                   "place": "Paris (ORY)",
-                  "arrival": "16:00 *",
+                  "arrival": "14:45 *",
                   "departure": null,
                   "role": "destination",
                   "lat": 48.86,
@@ -17163,126 +16897,142 @@
           ]
         },
         {
-          "id": "orient-afrique",
-          "name": "Orient & Africa",
+          "id": "extreme-orient",
+          "name": "Far East",
           "notes": [
-            "[S] Sourced: Air France operated the L-1049 to the Far East (Tokyo, Saigon/Indochina) and Central Africa; corridors and stops consistent with the period.",
-            "[R] Reconstructed: exact flight numbers and schedules.",
-            "* Arrival next day (+1 day). (Wed)/(Fri) = day of operation. [Tech] = technical stop.",
-            "[R] Return flights added automatically (mirror itinerary, reconstructed schedules)."
+            "[S] Sourced: the 'Eastern Epicurean' service (AF 170, Super Constellation) linked Paris–Rome–Tehran–Karachi–Bangkok–Saigon–Manila–Tokyo, per the official Air France timetable (summer 1956).",
+            "[R] Return flight reconstructed (mirror itinerary); outbound times per the timetable, return plausible.",
+            "* / **: arrival on D+1 / D+2. LT: Local Time."
           ],
           "flights": [
             {
-              "id": "air-france-orient-afrique-0",
-              "flightNo": "AF 184",
-              "line": "Far East (Le Tokyo)",
+              "id": "air-france-extreme-orient-0",
+              "flightNo": "AF 170",
+              "line": "Far East (Eastern Epicurean)",
               "lineHeader": "Axis / Line",
               "meta": [],
               "origin": "Paris (ORY)",
-              "departure": "13:00 (Wed)",
+              "departure": "17:40",
               "destination": "Tokyo (HND)",
-              "arrival": "15:30 (Fri)",
-              "frequency": "Line to Japan",
-              "frequencyHeader": "Note",
+              "arrival": "22:15 **",
+              "frequency": "Tuesday, Saturday",
+              "frequencyHeader": "Frequency / Note",
               "stops": [
                 {
                   "place": "Rome",
-                  "arrival": "17:00",
+                  "arrival": "20:30",
                   "arrivalNextDay": false,
-                  "departure": "18:00",
+                  "departure": "21:50",
                   "departureNextDay": false
                 },
                 {
-                  "place": "Beirut",
-                  "arrival": "23:30",
-                  "arrivalNextDay": false,
-                  "departure": "00:45",
+                  "place": "Tehran",
+                  "arrival": "08:30",
+                  "arrivalNextDay": true,
+                  "departure": "10:00",
                   "departureNextDay": true
                 },
                 {
                   "place": "Karachi",
-                  "arrival": "08:30",
-                  "arrivalNextDay": false,
-                  "departure": "09:45",
+                  "arrival": "16:00",
+                  "arrivalNextDay": true,
+                  "departure": "17:30",
                   "departureNextDay": true
                 },
                 {
-                  "place": "Calcutta",
-                  "arrival": "15:00",
-                  "arrivalNextDay": false,
-                  "departure": "16:15",
+                  "place": "Bangkok",
+                  "arrival": "03:50",
+                  "arrivalNextDay": true,
+                  "departure": "04:50",
                   "departureNextDay": true
                 },
                 {
                   "place": "Saigon",
-                  "arrival": "23:30",
+                  "arrival": "06:40",
                   "arrivalNextDay": true,
-                  "departure": "01:00",
-                  "departureNextDay": false
+                  "departure": "08:10",
+                  "departureNextDay": true
+                },
+                {
+                  "place": "Manila",
+                  "arrival": "13:10",
+                  "arrivalNextDay": true,
+                  "departure": "14:10",
+                  "departureNextDay": true
                 }
               ],
               "itinerary": [
                 {
                   "place": "Paris (ORY)",
                   "arrival": null,
-                  "departure": "13:00 (Wed)",
+                  "departure": "17:40",
                   "role": "origin",
                   "lat": 48.86,
                   "lon": 2.35
                 },
                 {
                   "place": "Rome",
-                  "arrival": "17:00",
+                  "arrival": "20:30",
                   "arrivalNextDay": false,
-                  "departure": "18:00",
+                  "departure": "21:50",
                   "departureNextDay": false,
                   "role": "stop",
                   "lat": 41.9,
                   "lon": 12.5
                 },
                 {
-                  "place": "Beirut",
-                  "arrival": "23:30",
-                  "arrivalNextDay": false,
-                  "departure": "00:45",
+                  "place": "Tehran",
+                  "arrival": "08:30",
+                  "arrivalNextDay": true,
+                  "departure": "10:00",
                   "departureNextDay": true,
                   "role": "stop",
-                  "lat": 33.89,
-                  "lon": 35.5
+                  "lat": 35.69,
+                  "lon": 51.39
                 },
                 {
                   "place": "Karachi",
-                  "arrival": "08:30",
-                  "arrivalNextDay": false,
-                  "departure": "09:45",
+                  "arrival": "16:00",
+                  "arrivalNextDay": true,
+                  "departure": "17:30",
                   "departureNextDay": true,
                   "role": "stop",
                   "lat": 24.86,
                   "lon": 67
                 },
                 {
-                  "place": "Calcutta",
-                  "arrival": "15:00",
-                  "arrivalNextDay": false,
-                  "departure": "16:15",
+                  "place": "Bangkok",
+                  "arrival": "03:50",
+                  "arrivalNextDay": true,
+                  "departure": "04:50",
                   "departureNextDay": true,
                   "role": "stop",
-                  "lat": 22.57,
-                  "lon": 88.36
+                  "lat": 13.75,
+                  "lon": 100.5
                 },
                 {
                   "place": "Saigon",
-                  "arrival": "23:30",
+                  "arrival": "06:40",
                   "arrivalNextDay": true,
-                  "departure": "01:00",
-                  "departureNextDay": false,
+                  "departure": "08:10",
+                  "departureNextDay": true,
                   "role": "stop",
                   "lat": 10.82,
                   "lon": 106.63
                 },
                 {
+                  "place": "Manila",
+                  "arrival": "13:10",
+                  "arrivalNextDay": true,
+                  "departure": "14:10",
+                  "departureNextDay": true,
+                  "role": "stop",
+                  "lat": 14.6,
+                  "lon": 120.98
+                },
+                {
                   "place": "Tokyo (HND)",
-                  "arrival": "15:30 (Fri)",
+                  "arrival": "22:15 **",
                   "departure": null,
                   "role": "destination",
                   "lat": 35.68,
@@ -17291,51 +17041,58 @@
               ]
             },
             {
-              "id": "air-france-orient-afrique-1",
-              "flightNo": "AF 185",
-              "line": "Far East (Le Tokyo) (Return)",
+              "id": "air-france-extreme-orient-1",
+              "flightNo": "AF 171",
+              "line": "Far East (Eastern Epicurean) (Return)",
               "lineHeader": "Axis / Line",
               "meta": [],
               "origin": "Tokyo (HND)",
               "departure": "16:00",
               "destination": "Paris (ORY)",
-              "arrival": "18:30 **",
-              "frequency": "Line to Japan",
-              "frequencyHeader": "Note",
+              "arrival": "05:30 **",
+              "frequency": "Thursday, Sunday",
+              "frequencyHeader": "Frequency / Note",
               "stops": [
                 {
+                  "place": "Manila",
+                  "arrival": "20:00",
+                  "arrivalNextDay": false,
+                  "departure": "21:00",
+                  "departureNextDay": false
+                },
+                {
                   "place": "Saigon",
-                  "arrival": "06:30",
+                  "arrival": "01:15",
                   "arrivalNextDay": true,
-                  "departure": "08:00",
+                  "departure": "02:15",
                   "departureNextDay": true
                 },
                 {
-                  "place": "Calcutta",
-                  "arrival": "15:15",
+                  "place": "Bangkok",
+                  "arrival": "04:00",
                   "arrivalNextDay": true,
-                  "departure": "16:30",
+                  "departure": "05:00",
                   "departureNextDay": true
                 },
                 {
                   "place": "Karachi",
-                  "arrival": "21:45",
+                  "arrival": "12:00",
                   "arrivalNextDay": true,
-                  "departure": "23:00",
+                  "departure": "13:00",
                   "departureNextDay": true
                 },
                 {
-                  "place": "Beirut",
-                  "arrival": "06:45",
+                  "place": "Tehran",
+                  "arrival": "18:00",
                   "arrivalNextDay": true,
-                  "departure": "08:00",
+                  "departure": "19:00",
                   "departureNextDay": true
                 },
                 {
                   "place": "Rome",
-                  "arrival": "13:30",
+                  "arrival": "01:30",
                   "arrivalNextDay": true,
-                  "departure": "14:30",
+                  "departure": "02:30",
                   "departureNextDay": true
                 }
               ],
@@ -17349,428 +17106,143 @@
                   "lon": 139.69
                 },
                 {
+                  "place": "Manila",
+                  "arrival": "20:00",
+                  "arrivalNextDay": false,
+                  "departure": "21:00",
+                  "departureNextDay": false,
+                  "role": "stop",
+                  "lat": 14.6,
+                  "lon": 120.98
+                },
+                {
                   "place": "Saigon",
-                  "arrival": "06:30",
+                  "arrival": "01:15",
                   "arrivalNextDay": true,
-                  "departure": "08:00",
+                  "departure": "02:15",
                   "departureNextDay": true,
                   "role": "stop",
                   "lat": 10.82,
                   "lon": 106.63
                 },
                 {
-                  "place": "Calcutta",
+                  "place": "Bangkok",
+                  "arrival": "04:00",
+                  "arrivalNextDay": true,
+                  "departure": "05:00",
+                  "departureNextDay": true,
+                  "role": "stop",
+                  "lat": 13.75,
+                  "lon": 100.5
+                },
+                {
+                  "place": "Karachi",
+                  "arrival": "12:00",
+                  "arrivalNextDay": true,
+                  "departure": "13:00",
+                  "departureNextDay": true,
+                  "role": "stop",
+                  "lat": 24.86,
+                  "lon": 67
+                },
+                {
+                  "place": "Tehran",
+                  "arrival": "18:00",
+                  "arrivalNextDay": true,
+                  "departure": "19:00",
+                  "departureNextDay": true,
+                  "role": "stop",
+                  "lat": 35.69,
+                  "lon": 51.39
+                },
+                {
+                  "place": "Rome",
+                  "arrival": "01:30",
+                  "arrivalNextDay": true,
+                  "departure": "02:30",
+                  "departureNextDay": true,
+                  "role": "stop",
+                  "lat": 41.9,
+                  "lon": 12.5
+                },
+                {
+                  "place": "Paris (ORY)",
+                  "arrival": "05:30 **",
+                  "departure": null,
+                  "role": "destination",
+                  "lat": 48.86,
+                  "lon": 2.35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "europe",
+          "name": "Europe",
+          "notes": [
+            "[S] Sourced: the 'L'Épicurien' service (AF 568, Super Constellation) linked Paris (Orly, 12:00) to London (13:15), per the official Air France timetable (summer 1956); a short prestige flight.",
+            "[R] Return flight reconstructed (London–Paris); outbound time per the 1956 Air France timetable.",
+            "LT: Local Time."
+          ],
+          "flights": [
+            {
+              "id": "air-france-europe-0",
+              "flightNo": "AF 568",
+              "line": "Europe (L'Épicurien)",
+              "lineHeader": "Axis / Line",
+              "meta": [],
+              "origin": "Paris (ORY)",
+              "departure": "12:00",
+              "destination": "London (LHR)",
+              "arrival": "13:15",
+              "frequency": "Daily",
+              "frequencyHeader": "Frequency / Note",
+              "stops": [],
+              "itinerary": [
+                {
+                  "place": "Paris (ORY)",
+                  "arrival": null,
+                  "departure": "12:00",
+                  "role": "origin",
+                  "lat": 48.86,
+                  "lon": 2.35
+                },
+                {
+                  "place": "London (LHR)",
+                  "arrival": "13:15",
+                  "departure": null,
+                  "role": "destination",
+                  "lat": 51.51,
+                  "lon": -0.13
+                }
+              ]
+            },
+            {
+              "id": "air-france-europe-1",
+              "flightNo": "AF 569",
+              "line": "Europe (L'Épicurien) (Return)",
+              "lineHeader": "Axis / Line",
+              "meta": [],
+              "origin": "London (LHR)",
+              "departure": "14:00",
+              "destination": "Paris (ORY)",
+              "arrival": "15:15",
+              "frequency": "Daily",
+              "frequencyHeader": "Frequency / Note",
+              "stops": [],
+              "itinerary": [
+                {
+                  "place": "London (LHR)",
+                  "arrival": null,
+                  "departure": "14:00",
+                  "role": "origin",
+                  "lat": 51.51,
+                  "lon": -0.13
+                },
+                {
+                  "place": "Paris (ORY)",
                   "arrival": "15:15",
-                  "arrivalNextDay": true,
-                  "departure": "16:30",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 22.57,
-                  "lon": 88.36
-                },
-                {
-                  "place": "Karachi",
-                  "arrival": "21:45",
-                  "arrivalNextDay": true,
-                  "departure": "23:00",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 24.86,
-                  "lon": 67
-                },
-                {
-                  "place": "Beirut",
-                  "arrival": "06:45",
-                  "arrivalNextDay": true,
-                  "departure": "08:00",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 33.89,
-                  "lon": 35.5
-                },
-                {
-                  "place": "Rome",
-                  "arrival": "13:30",
-                  "arrivalNextDay": true,
-                  "departure": "14:30",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 41.9,
-                  "lon": 12.5
-                },
-                {
-                  "place": "Paris (ORY)",
-                  "arrival": "18:30 **",
-                  "departure": null,
-                  "role": "destination",
-                  "lat": 48.86,
-                  "lon": 2.35
-                }
-              ]
-            },
-            {
-              "id": "air-france-orient-afrique-2",
-              "flightNo": "AF 186",
-              "line": "Indochina (Saigon)",
-              "lineHeader": "Axis / Line",
-              "meta": [],
-              "origin": "Paris (ORY)",
-              "departure": "14:00 (Wed)",
-              "destination": "Saigon (SGN)",
-              "arrival": "01:30 (Fri)",
-              "frequency": "Indochina Mail",
-              "frequencyHeader": "Note",
-              "stops": [
-                {
-                  "place": "Rome",
-                  "arrival": "18:00",
-                  "arrivalNextDay": false,
-                  "departure": "19:00",
-                  "departureNextDay": false
-                },
-                {
-                  "place": "Cairo (CAI)",
-                  "arrival": "23:30",
-                  "arrivalNextDay": false,
-                  "departure": "00:45",
-                  "departureNextDay": true
-                },
-                {
-                  "place": "Karachi",
-                  "arrival": "08:00",
-                  "arrivalNextDay": false,
-                  "departure": "09:15",
-                  "departureNextDay": true
-                },
-                {
-                  "place": "Calcutta",
-                  "arrival": "14:30",
-                  "arrivalNextDay": false,
-                  "departure": "15:45",
-                  "departureNextDay": true
-                },
-                {
-                  "place": "Bangkok (BKK)",
-                  "arrival": "21:00",
-                  "arrivalNextDay": false,
-                  "departure": "22:15",
-                  "departureNextDay": true
-                }
-              ],
-              "itinerary": [
-                {
-                  "place": "Paris (ORY)",
-                  "arrival": null,
-                  "departure": "14:00 (Wed)",
-                  "role": "origin",
-                  "lat": 48.86,
-                  "lon": 2.35
-                },
-                {
-                  "place": "Rome",
-                  "arrival": "18:00",
-                  "arrivalNextDay": false,
-                  "departure": "19:00",
-                  "departureNextDay": false,
-                  "role": "stop",
-                  "lat": 41.9,
-                  "lon": 12.5
-                },
-                {
-                  "place": "Cairo (CAI)",
-                  "arrival": "23:30",
-                  "arrivalNextDay": false,
-                  "departure": "00:45",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 30.04,
-                  "lon": 31.24
-                },
-                {
-                  "place": "Karachi",
-                  "arrival": "08:00",
-                  "arrivalNextDay": false,
-                  "departure": "09:15",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 24.86,
-                  "lon": 67
-                },
-                {
-                  "place": "Calcutta",
-                  "arrival": "14:30",
-                  "arrivalNextDay": false,
-                  "departure": "15:45",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 22.57,
-                  "lon": 88.36
-                },
-                {
-                  "place": "Bangkok (BKK)",
-                  "arrival": "21:00",
-                  "arrivalNextDay": false,
-                  "departure": "22:15",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 13.75,
-                  "lon": 100.5
-                },
-                {
-                  "place": "Saigon (SGN)",
-                  "arrival": "01:30 (Fri)",
-                  "departure": null,
-                  "role": "destination",
-                  "lat": 10.82,
-                  "lon": 106.63
-                }
-              ]
-            },
-            {
-              "id": "air-france-orient-afrique-3",
-              "flightNo": "AF 187",
-              "line": "Indochina (Saigon) (Return)",
-              "lineHeader": "Axis / Line",
-              "meta": [],
-              "origin": "Saigon (SGN)",
-              "departure": "16:00",
-              "destination": "Paris (ORY)",
-              "arrival": "03:30 **",
-              "frequency": "Indochina Mail",
-              "frequencyHeader": "Note",
-              "stops": [
-                {
-                  "place": "Bangkok (BKK)",
-                  "arrival": "19:15",
-                  "arrivalNextDay": false,
-                  "departure": "20:30",
-                  "departureNextDay": false
-                },
-                {
-                  "place": "Calcutta",
-                  "arrival": "01:45",
-                  "arrivalNextDay": true,
-                  "departure": "03:00",
-                  "departureNextDay": true
-                },
-                {
-                  "place": "Karachi",
-                  "arrival": "08:15",
-                  "arrivalNextDay": true,
-                  "departure": "09:30",
-                  "departureNextDay": true
-                },
-                {
-                  "place": "Cairo (CAI)",
-                  "arrival": "16:45",
-                  "arrivalNextDay": true,
-                  "departure": "18:00",
-                  "departureNextDay": true
-                },
-                {
-                  "place": "Rome",
-                  "arrival": "22:30",
-                  "arrivalNextDay": true,
-                  "departure": "23:30",
-                  "departureNextDay": true
-                }
-              ],
-              "itinerary": [
-                {
-                  "place": "Saigon (SGN)",
-                  "arrival": null,
-                  "departure": "16:00",
-                  "role": "origin",
-                  "lat": 10.82,
-                  "lon": 106.63
-                },
-                {
-                  "place": "Bangkok (BKK)",
-                  "arrival": "19:15",
-                  "arrivalNextDay": false,
-                  "departure": "20:30",
-                  "departureNextDay": false,
-                  "role": "stop",
-                  "lat": 13.75,
-                  "lon": 100.5
-                },
-                {
-                  "place": "Calcutta",
-                  "arrival": "01:45",
-                  "arrivalNextDay": true,
-                  "departure": "03:00",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 22.57,
-                  "lon": 88.36
-                },
-                {
-                  "place": "Karachi",
-                  "arrival": "08:15",
-                  "arrivalNextDay": true,
-                  "departure": "09:30",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 24.86,
-                  "lon": 67
-                },
-                {
-                  "place": "Cairo (CAI)",
-                  "arrival": "16:45",
-                  "arrivalNextDay": true,
-                  "departure": "18:00",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 30.04,
-                  "lon": 31.24
-                },
-                {
-                  "place": "Rome",
-                  "arrival": "22:30",
-                  "arrivalNextDay": true,
-                  "departure": "23:30",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 41.9,
-                  "lon": 12.5
-                },
-                {
-                  "place": "Paris (ORY)",
-                  "arrival": "03:30 **",
-                  "departure": null,
-                  "role": "destination",
-                  "lat": 48.86,
-                  "lon": 2.35
-                }
-              ]
-            },
-            {
-              "id": "air-france-orient-afrique-4",
-              "flightNo": "AF 405",
-              "line": "Central Africa",
-              "lineHeader": "Axis / Line",
-              "meta": [],
-              "origin": "Paris (ORY)",
-              "departure": "22:30",
-              "destination": "Brazzaville (BZV)",
-              "arrival": "16:45 *",
-              "frequency": "Trans-Saharan route",
-              "frequencyHeader": "Note",
-              "stops": [
-                {
-                  "place": "Algiers",
-                  "arrival": "01:45",
-                  "arrivalNextDay": false,
-                  "departure": "02:45",
-                  "departureNextDay": true
-                },
-                {
-                  "place": "Kano [Tech]",
-                  "arrival": "10:15",
-                  "arrivalNextDay": false,
-                  "departure": "11:30",
-                  "departureNextDay": true
-                }
-              ],
-              "itinerary": [
-                {
-                  "place": "Paris (ORY)",
-                  "arrival": null,
-                  "departure": "22:30",
-                  "role": "origin",
-                  "lat": 48.86,
-                  "lon": 2.35
-                },
-                {
-                  "place": "Algiers",
-                  "arrival": "01:45",
-                  "arrivalNextDay": false,
-                  "departure": "02:45",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 36.75,
-                  "lon": 3.06
-                },
-                {
-                  "place": "Kano [Tech]",
-                  "arrival": "10:15",
-                  "arrivalNextDay": false,
-                  "departure": "11:30",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 12,
-                  "lon": 8.52
-                },
-                {
-                  "place": "Brazzaville (BZV)",
-                  "arrival": "16:45 *",
-                  "departure": null,
-                  "role": "destination",
-                  "lat": -4.26,
-                  "lon": 15.28
-                }
-              ]
-            },
-            {
-              "id": "air-france-orient-afrique-5",
-              "flightNo": "AF 406",
-              "line": "Central Africa (Return)",
-              "lineHeader": "Axis / Line",
-              "meta": [],
-              "origin": "Brazzaville (BZV)",
-              "departure": "16:00",
-              "destination": "Paris (ORY)",
-              "arrival": "10:15 *",
-              "frequency": "Trans-Saharan route",
-              "frequencyHeader": "Note",
-              "stops": [
-                {
-                  "place": "Kano [Tech]",
-                  "arrival": "21:15",
-                  "arrivalNextDay": false,
-                  "departure": "22:30",
-                  "departureNextDay": false
-                },
-                {
-                  "place": "Algiers",
-                  "arrival": "06:00",
-                  "arrivalNextDay": true,
-                  "departure": "07:00",
-                  "departureNextDay": true
-                }
-              ],
-              "itinerary": [
-                {
-                  "place": "Brazzaville (BZV)",
-                  "arrival": null,
-                  "departure": "16:00",
-                  "role": "origin",
-                  "lat": -4.26,
-                  "lon": 15.28
-                },
-                {
-                  "place": "Kano [Tech]",
-                  "arrival": "21:15",
-                  "arrivalNextDay": false,
-                  "departure": "22:30",
-                  "departureNextDay": false,
-                  "role": "stop",
-                  "lat": 12,
-                  "lon": 8.52
-                },
-                {
-                  "place": "Algiers",
-                  "arrival": "06:00",
-                  "arrivalNextDay": true,
-                  "departure": "07:00",
-                  "departureNextDay": true,
-                  "role": "stop",
-                  "lat": 36.75,
-                  "lon": 3.06
-                },
-                {
-                  "place": "Paris (ORY)",
-                  "arrival": "10:15 *",
                   "departure": null,
                   "role": "destination",
                   "lat": 48.86,
